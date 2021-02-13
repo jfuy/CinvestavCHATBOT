@@ -1,0 +1,59 @@
+<div class="image_background">
+    <app-header></app-header>
+    <div class=" background_register transparent ">
+        <div class="centrado">
+            <div>
+                <div class="circulo_register">
+                </div>
+            </div>
+            <div>
+                <!-- form del registo -->
+                <form [formGroup]="formRegister" autocomplete="off" (ngSubmit)="sendRegister()">
+                    <input type="text" class="input_register" matInput placeholder="Nombre" formControlName="username">
+                    <!--input de los datos del ususario como nombre y años-->
+                    <div class="example-radio-group">
+                        <input type="text" class="input_register_apellidos" matInput placeholder="Apellido paterno" formControlName="lastNameFather">
+                        <input type="text" class="input_register_apellidos" matInput placeholder="Apellido materno" formControlName="lastNameMother">
+                        <input type="number" class="input_edad" matInput placeholder="Edad" formControlName="yearsold">
+                    </div>
+                    <!--/input de los datos del ususario como nombre y años-->
+
+                    <!--input del email -->
+                    <input type="email" class="input_register" matInput placeholder="Email" formControlName="email">
+                    <!--/input del email -->
+
+                    <p>
+                        <mat-radio-group aria-labelledby="example-radio-group-label" class="example-radio-group" formControlName="rol">
+                            <mat-radio-button class="example-radio-button" *ngFor="let rol of rols" [value]="rol">
+                                {{rol}}
+                            </mat-radio-button>
+                        </mat-radio-group>
+                    </p>
+                    <!--input de las contraseñas -->
+                    <input type="password" class="input_register" autocomplete="off" matInput placeholder="Password" formControlName="password">
+                    <input type="password" class="input_register" autocomplete="off" matInput placeholder="Confirm password" formControlName="confirmPassword">
+                    <!--/input de las contraseñas -->
+
+
+                    <div class="button">
+                        <button class="button_register" [disabled]="formRegister.invalid" type="submit" mat-button>Registrarse</button>
+                    </div>
+                    <p style="color: white; margin-top: 5px;">
+                        ¿Ya tienes cuenta? <button class="button_nocss" (click)="Login()"><strong>Inicia sesión</strong></button>
+                    </p>
+
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+    <!--para regresar al login-->
+    <div id="boxR">
+        <button class="btn-return" (click)="loginP()">
+        <i class="material-icons">
+            navigate_before
+        </i>       
+    </button>
+    </div>
+</div>

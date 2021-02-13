@@ -1,0 +1,36 @@
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+.toolbar {
+    background-color: #1D2B46;
+    color: white;
+}
+
+#tituloHeader {
+    cursor: pointer;
+}
+
+.example-icon {
+    padding: 0 14px;
+}
+
+.example-spacer {
+    flex: 1 1 auto;
+}
+
+.logoCinvestav {
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url('/assets/pictures/logocinves2.ico');
+    width: 42px;
+    height: 35px;
+    border-radius: 100%;
+    margin-right: 1%;
+}
+
+#tituloHeader {
+    font-size: 25px;
+}
+
+.opcionMenu {
+    font-size: 17px;
+    color: #dbdfe6;
+}

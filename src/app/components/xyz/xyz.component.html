@@ -1,0 +1,29 @@
+<button mat-button (click)="openDialog()">Open</button>
+
+<div>
+    <form [formGroup]="formFile" autocomplete="off" (ngSubmit)="subirArchivo()" class="md-form">
+
+        <!-- <input type="email" class="form-control" id="correoDestinity" required [(ngModel)]="correoDestinity" name="correoDestinity" #correoDestinity="ngModel" formControlName="correoDestinity"> -->
+        <input type="email" class="form-control" id="correoDestinity" formControlName="correoDestinity" required />
+
+        <textarea type="form-control" class="md-textarea form-control" mdbInput id="description" formControlName="description"></textarea>
+
+        <input class="file-input" type="file" formControlName="archivo" (change)="cambioArchivo($event)">
+
+        <!-- <button [ngClass]="{'button': true, 'is-success': true, 'is-large': true, 'is-loading': porcentaje > 0 && porcentaje < 100}" [disabled]="!formFile.valid && (porcentaje > 0 && porcentaje < 100)">Subir archivo</button> -->
+        <button [disabled]="!formFile.valid && (porcentaje > 0 && porcentaje < 100)">Subir archivo</button>
+
+    </form>
+
+    <!-- <button (click)="getReferencia()">REFERENCIA</button> {{URLPublica}} -->
+    <button (click)="listar2()">LISTAR</button>
+
+    <div>
+        <h1>LISTA</h1>
+        <ul>
+            <li *ngFor="let item of generalFiles; let indice=index">
+                <a href="{{item.url}}">IR</a>
+                <strong>{{item.nameFile}}</strong> - {{item.remitente}} - {{item.timeSend}} - {{item.description}}
+            </li>
+        </ul>
+    </div>

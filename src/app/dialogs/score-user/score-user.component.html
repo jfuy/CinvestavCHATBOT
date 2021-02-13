@@ -1,0 +1,43 @@
+<h4 id="nameStudent">{{nombreAlumno|uppercase}}</h4><br>
+<!--formulario para registrar las calificaciones de un alumno-->
+<form [formGroup]="formFile">
+
+    <input matInput type="number" formControlName="exits" hidden>
+    <input matInput type="number" formControlName="idScore" hidden>
+
+    <div mat-dialog-content>
+        <mat-label>Calificacion Bimestre 1:</mat-label>
+        <mat-form-field class="inp">
+            <input matInput type="number" formControlName="bim1" class="scor">
+        </mat-form-field>
+        <p></p>
+        <mat-label>Calificacion Bimestre 2:</mat-label>
+        <mat-form-field class="inp">
+            <input matInput type="number" formControlName="bim2" class="scor">
+        </mat-form-field>
+        <p></p>
+        <mat-label>Calificacion Bimestre 3:</mat-label>
+        <mat-form-field class="inp">
+            <input matInput type="number" formControlName="bim3" class="scor">
+        </mat-form-field>
+        <p></p>
+        <mat-label>Calificacion Bimestre 4:</mat-label>
+        <mat-form-field class="inp">
+            <input matInput type="number" formControlName="bim4" class="scor">
+        </mat-form-field>
+        <p></p>
+        <mat-label>Calificacion Bimestre 5:</mat-label>
+        <mat-form-field class="inp">
+            <input matInput type="number" formControlName="bim5" class="scor">
+        </mat-form-field>
+        <p></p>
+
+    </div>
+    <!--botones para cancelar o bien guardar las calificaciones-->
+    <div id="botons">
+        <div mat-dialog-actions id="buttons">
+            <button mat-button (click)="onClickNo()" class="btn btn-danger">Cancelar</button>
+            <button mat-button type="submit" [disabled]="formFile.invalid" [mat-dialog-close]="formFile.value" class="btn btn-success">Registrar</button>
+        </div>
+    </div>
+</form>

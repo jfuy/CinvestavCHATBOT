@@ -1,0 +1,60 @@
+<div class="image_background">
+    <!-- nav bar -->
+
+    <app-header></app-header>
+
+    <!--CUADRO CHATBOT-->
+    <br><br>
+    <div class="background_chatbot">
+        <div class="chatbotBox">
+            <!-- Form con el metodo de enviar mensajes -->
+            <form [formGroup]="formChat" (ngSubmit)="sendMessage()">
+
+                <!--AÑADIENDO NUEVO CHATBOT-->
+                <div id="chatbotStudentInterface">
+                    <iframe width="80%" height="658px" src="https://console.dialogflow.com/api-client/demo/embedded/4d619755-34e5-4d2f-b56a-4b0e3c5fe385"></iframe>
+                    <!-- <iframe width="80%" height="658px" src="https://console.dialogflow.com/api-client/demo/embedded/9f4b7647-cfa8-4a0d-a6e9-19930aec2054"></iframe> -->
+                </div>
+
+
+                <div class="background_bar">
+                    <!-- Boton para añadir un archivo  y generar key (solo disponibles para profesores)-->
+
+                    <form *ngIf="user.type=='Profesor'" class="horizontal row">
+                        <button [matMenuTriggerFor]="menu" class="add">
+                        <i class="material-icons">
+                            add
+                        </i>       
+                        <mat-menu #menu="matMenu">
+                            <button mat-menu-item (click)="openDialogAddFile()">
+                                <mat-icon>file_copy</mat-icon>
+                                <span>Añadir un archivo </span>
+                            </button>
+
+                        <button mat-menu-item (click)="generateKeyProfesor()">
+                                <mat-icon>vpn_key</mat-icon>
+                                <span>Genera nueva clave de profesor</span>
+                            </button>
+                        </mat-menu>
+
+                        </button>
+
+                    </form>
+                    <div class="horizontal">
+
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!--para el boton de retroceder-->
+    <div id="boxR">
+        <button class="btn-return" (click)="menuP()">
+        <i class="material-icons">
+            navigate_before
+        </i>       
+    </button>
+    </div>
+
+</div>

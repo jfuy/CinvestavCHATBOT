@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "cinvestavchatbot": {
+      "hosting": {
+        "chatbot": [
+          "cinvestavchatbot"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "cinvestavchatbot"
+  }
+}

@@ -1,0 +1,590 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>chatbot documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">chatbot documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content interface">
+                   <div class="content-data">
+
+
+
+
+
+
+
+
+
+
+
+
+<ol class="breadcrumb">
+  <li>Interfaces</li>
+  <li>Grade</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info">
+        <p class="comment">
+            <h3>File</h3>
+        </p>
+        <p class="comment">
+            <code>src/app/components/users-lessons/users-lessons.component.ts</code>
+        </p>
+
+            <p class="comment">
+                <h3>Description</h3>
+            </p>
+            <p class="comment">
+                <p>Interace para mantener dos valores uno a mostrar y otro el valor que relamente tendra</p>
+
+            </p>
+
+
+        <section>
+            <h3 id="index">Index</h3>
+            <table class="table table-sm table-bordered index-table">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <h6><b>Properties</b></h6>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <ul class="index-list">
+                                <li>
+                                        <a href="#value">value</a>
+                                </li>
+                                <li>
+                                        <a href="#viewValue">viewValue</a>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+
+
+            <section>
+                <h3 id="inputs">Properties</h3>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                                <tr>
+                                    <td class="col-md-4">
+                                        <a name="value"></a>
+                                        <span class="name"><b>value</b><a href="#value"><span class="icon ion-ios-link"></span></a></span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="col-md-4">
+                                        <code>value:         <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+</code>
+                                    </td>
+                                </tr>
+
+
+                                    <tr>
+                                        <td class="col-md-4">
+                                            <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                                        </td>
+                                    </tr>
+
+
+
+
+
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-description"><p>value es el valor real que tendra </p>
+</div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                                <tr>
+                                    <td class="col-md-4">
+                                        <a name="viewValue"></a>
+                                        <span class="name"><b>viewValue</b><a href="#viewValue"><span class="icon ion-ios-link"></span></a></span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="col-md-4">
+                                        <code>viewValue:         <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+</code>
+                                    </td>
+                                </tr>
+
+
+                                    <tr>
+                                        <td class="col-md-4">
+                                            <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                                        </td>
+                                    </tr>
+
+
+
+
+
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-description"><p>es el valor a mostrar de a interface</p>
+</div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+            </section>
+    </div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit, ViewChild, ViewChildren, QueryList } from &#x27;@angular/core&#x27;;
+import { MatPaginator, MatSort, MatTableDataSource, MatDialog } from &#x27;@angular/material&#x27;;
+import { APIService } from &#x27;src/app/services/api/api.service&#x27;;
+import { User } from &#x27;src/app/models/User.model&#x27;;
+import { Subject } from &#x27;src/app/models/Subject.model&#x27;;
+import { AddSubjectComponent } from &#x27;src/app/dialogs/add-subject/add-subject.component&#x27;;
+import { AddStudentComponent } from &#x27;src/app/dialogs/add-student/add-student.component&#x27;;
+import { SelectionModel } from &#x27;@angular/cdk/collections&#x27;;
+
+/**
+ * Interace para mantener dos valores uno a mostrar y otro el valor que relamente tendra
+ */
+export interface Grade{
+  /**
+   * value es el valor real que tendra 
+   */
+  value: any,
+  /**
+   * es el valor a mostrar de a interface
+   */
+  viewValue: any
+}
+/**
+ * Interace para mantener dos valores uno a mostrar y otro el valor que relamente tendra
+ */
+export interface Group{
+  /**
+   * value es el valor real que tendra 
+   */
+  value: any,
+  /**
+   * es el valor a mostrar de a interface
+   */
+  viewValue: any
+}
+
+@Component({
+  selector: &#x27;app-users-lessons&#x27;,
+  templateUrl: &#x27;./users-lessons.component.html&#x27;,
+  styleUrls: [&#x27;./users-lessons.component.css&#x27;]
+})
+export class UsersLessonsComponent implements OnInit {
+  /**
+   * Arraeglo que contiene a todos los alumnos buscados
+   */
+  arrayStudents: Array&lt;User&gt;;
+  /**
+   * Arreglo que contiene todas las materias de los alumnos
+   */
+  arrayLessons: Array&lt;Subject&gt;;
+  
+
+
+
+  /**
+   * Indica si ya se buscaron materias  
+   */
+  materias: Boolean &#x3D;false;
+  /**
+   * Indica si ya se buscaron estudiantes anteriormente
+   */
+  estudiantes: Boolean &#x3D;false;
+  
+  /**
+   * Arreglo que tiene todos los alumnos seleccionados
+   */
+  selection &#x3D; new SelectionModel&lt;any&gt;(true, []);
+
+
+  /**
+   * Columnas a mostrar para los alumnos
+   */
+  displayedColumns: string[] &#x3D; [&#x27;select&#x27;,&#x27;id&#x27;, &#x27;name&#x27;,&#x27;grade&#x27;, &#x27;group&#x27;,&#x27;delet&#x27;];
+  
+  /**
+   * Tabla donde estan los datos de los usuarios
+   */
+  dataSource: MatTableDataSource&lt;User&gt;;
+
+  /**
+   * Columnas a mostrar para las materias
+   */
+  displayedColumnsLessons: string[] &#x3D; [&#x27;name&#x27;,&#x27;grade&#x27;, &#x27;deleted&#x27;];
+  
+  
+  /**
+   * Tabla donde estan los datos de los usuarios
+   */
+  dataSourceLessons: MatTableDataSource&lt;Subject&gt;;
+
+
+
+
+  /**
+   * Contiene el valor del grado seleccionado
+   */
+  gradeSelected:String
+
+  /**
+   * Contiene el valor del grupo seleccionado
+   */
+  groupSelected:String
+  /**
+   *  Propiedad que sirve para tener los grados de los alumnos
+   * @param value es el valor que tendra como tal la seleccion 
+   * @param viewValue es el valor que que se muestra para la seleccion 
+   * 
+   */
+  grades:Grade[] &#x3D; [
+    {value: &#x27;1&#x27;, viewValue:&quot;1°&quot;},
+    {value: &#x27;2&#x27;, viewValue:&quot;2°&quot;},
+    {value: &#x27;3&#x27;, viewValue:&quot;3°&quot;},
+    {value: &#x27;4&#x27;, viewValue:&quot;4°&quot;},
+    {value: &#x27;5&#x27;, viewValue:&quot;5°&quot;},
+    {value: &#x27;6&#x27;, viewValue:&quot;6°&quot;}
+  ];
+
+  /**
+   * Propiedad que indica 
+   * @param value es el valor que tendra como tal la seleccion 
+   * @param viewValue es el valor que que se muestra para la seleccion 
+   * 
+   */
+  groups:Group[] &#x3D; [
+    {value: &#x27;A&#x27;, viewValue:&quot;A&quot;},
+    {value: &#x27;B&#x27;, viewValue:&quot;B&quot;},
+    {value: &#x27;C&#x27;, viewValue:&quot;C&quot;},
+    {value: &#x27;D&#x27;, viewValue:&quot;D&quot;},
+    {value: &#x27;E&#x27;, viewValue:&quot;E&quot;},
+    {value: &#x27;F&#x27;, viewValue:&quot;F&quot;}
+  ];
+
+  
+
+  @ViewChildren(MatPaginator, ) paginator:QueryList&lt;MatPaginator&gt;;
+  @ViewChildren(MatSort)  sort:QueryList&lt; MatSort&gt;;
+
+  /**
+   * Constructor de la clase 
+   * @param api es la variable de la api que conecta con la base de datos
+   * @param dialog variable para hacer llamada a un dialog externo
+   */
+  constructor(
+    private api: APIService,
+    public dialog : MatDialog,
+    
+  ) {
+
+  }
+  ngOnInit() {    
+  }
+  /**
+   * Metodo que sirve para buscar un estudiante haciendo una llamada a la base de datos por la 
+   * API este metodo no recive parametros porque saca los valores de los campos seleccionador de el grado y el grupo
+   */
+  searchStudents(){ 
+    if (this.gradeSelected){
+      let params&#x3D;{
+        grade:this.gradeSelected
+      }
+
+      this.api.getSubjectsGrade(params).subscribe(response&#x3D;&gt;{
+        this.materias&#x3D;true
+        this.arrayLessons&#x3D;response as Array&lt;Subject&gt;
+        console.log(this.arrayLessons)
+        console.log(&quot;users&quot;)
+        this.dataSourceLessons &#x3D; new MatTableDataSource(this.arrayLessons);
+        this.dataSourceLessons.paginator &#x3D; this.paginator.first;
+        this.dataSourceLessons.sort &#x3D; this.sort.first;
+      });
+    }
+
+    if (this.gradeSelected !&#x3D; null &amp;&amp; this.groupSelected !&#x3D; null) {
+      let params&#x3D;{
+        &quot;grade&quot;:this.gradeSelected,
+	      &quot;group&quot;:this.groupSelected
+      }
+      
+      this.api.getUsersInLesson(params).subscribe(response&#x3D;&gt;{
+        this.estudiantes&#x3D;true;
+
+        this.arrayStudents&#x3D;response as Array&lt;User&gt;
+
+          this.dataSource &#x3D; new MatTableDataSource(this.arrayStudents);
+          this.dataSource.paginator &#x3D; this.paginator.last;
+          this.dataSource.sort &#x3D; this.sort.last;
+  
+      });
+    }
+  }
+ 
+
+  /**
+   * Filtro para busqueda en la tabla de alumnos
+   * @param filterValue Valor a filtrar en la tabla de alumnos
+   */
+  applyFilter(filterValue: string) {
+    this.dataSource.filter &#x3D; filterValue.trim().toLowerCase();
+
+    if (this.dataSource.paginator) {
+      this.dataSource.paginator.firstPage();
+    }
+  }
+  /**
+   * Metodo que elimina una materia 
+   * @param row Matetria qu recibe como parametro para eliminar
+   */
+  deleted(row:Subject){
+    row.deleted&#x3D;true;
+    this.api.updateSubject(row).subscribe(response&#x3D;&gt;{
+      console.log(response);
+      let params&#x3D;{
+        grade:this.gradeSelected
+      }
+  
+      this.api.getSubjectsGrade(params).subscribe(response&#x3D;&gt;{
+        this.materias&#x3D;true
+        this.arrayLessons&#x3D;response as Array&lt;Subject&gt;
+        console.log(this.arrayLessons)
+        console.log(&quot;users&quot;)
+        this.dataSourceLessons &#x3D; new MatTableDataSource(this.arrayLessons);
+        this.dataSourceLessons.paginator &#x3D; this.paginator.first;
+        this.dataSourceLessons.sort &#x3D; this.sort.first;
+      });
+    })
+    
+  }
+  /**
+   * Metodo que filtra la busqueda de materias
+   * @param filterValue Valor a filtrar para la busqueda de materias
+   */
+  applyFilterLesson(filterValue: string) {
+    this.dataSourceLessons.filter &#x3D; filterValue.trim().toLowerCase();
+
+    if (this.dataSourceLessons.paginator) {
+      this.dataSourceLessons.paginator.firstPage();
+    }
+  }
+
+  /**
+   * Metodo para añadir una nueva materia abre un dialog
+   */
+  addSubject(){
+    const dialogRef &#x3D; this.dialog.open(AddSubjectComponent,{
+      data: {
+        grade: this.gradeSelected,
+        group:this.groupSelected
+      }
+    });
+    dialogRef.afterClosed().subscribe(response&#x3D;&gt;{
+        if(response){
+          let subject:Subject&#x3D; new Subject(response.materia,response.grado, false, 1 );
+          this.api.addSubject(subject).subscribe(response&#x3D;&gt;{
+            if(response){
+              let params&#x3D;{
+                grade:this.gradeSelected
+              }
+          
+              this.api.getSubjectsGrade(params).subscribe(response&#x3D;&gt;{
+                this.materias&#x3D;true
+                this.arrayLessons&#x3D;response as Array&lt;any&gt;
+                this.dataSourceLessons &#x3D; new MatTableDataSource(this.arrayLessons);
+                this.dataSourceLessons.paginator &#x3D; this.paginator.first;
+                this.dataSourceLessons.sort &#x3D; this.sort.first;
+              });
+            }
+          })
+
+
+          
+        } 
+           
+    })
+  }
+
+  /**
+   * Metodo para añadir un estudiante todavia no esta terminado
+   */
+
+  addStudent(){
+    const dialogRef &#x3D; this.dialog.open(AddStudentComponent,{
+      data: {
+        grade: this.gradeSelected,
+        group:this.groupSelected
+      }
+    });
+    dialogRef.afterClosed().subscribe(response&#x3D;&gt;{
+        console.log(response);
+        if(response){
+          let subject:Subject&#x3D; new Subject(response.materia,response.grado, false, 1 );
+          console.log(subject)
+          this.api.addSubject(subject).subscribe(response&#x3D;&gt;{
+            if(response){
+              let params&#x3D;{
+                grade:this.gradeSelected
+              }
+              this.api.getSubjectsGrade(params).subscribe(response&#x3D;&gt;{
+                this.materias&#x3D;true
+                this.arrayLessons&#x3D;response as Array&lt;any&gt;
+                this.dataSourceLessons &#x3D; new MatTableDataSource(this.arrayLessons);
+                this.dataSourceLessons.paginator &#x3D; this.paginator.first;
+                this.dataSourceLessons.sort &#x3D; this.sort.first;
+              });
+            }
+          })
+        }    
+    })
+  }
+  /**
+   * Metodo para eliminar un estudiante
+   * @param row Estudiante a leminar
+   */
+  deleteStudent(row){
+    this.api.deleteLessonIdUser(row.id_user).subscribe(response&#x3D;&gt;{
+      // this.dataSource.data.find(row).
+    })
+  }
+  /**
+   * Metodo para comprobar si todos en una pagina han sifo seleccionados
+   */
+  isAllSelected() {
+    const numSelected &#x3D; this.selection.selected.length;
+    const numRows &#x3D; this.dataSource.data.length;
+    return numSelected &#x3D;&#x3D;&#x3D; numRows;
+  }
+  /**
+   * Metodo para seleccionar 
+   */
+  masterToggle() {
+    this.isAllSelected() ?
+      this.selection.clear() :
+      this.dataSource.data.forEach(row &#x3D;&gt; this.selection.select(row));
+  }
+  /**
+   * Metood para eliminar a todo seleccionado
+   */
+  async removeSelectedRows() {
+    this.selection.selected.forEach(item &#x3D;&gt; {
+      let index: number &#x3D; this.arrayStudents.findIndex(d &#x3D;&gt; d &#x3D;&#x3D;&#x3D; item);
+      console.log(this.arrayStudents.findIndex(d &#x3D;&gt; d &#x3D;&#x3D;&#x3D; item));
+      let temp:any &#x3D; this.arrayStudents.find(d &#x3D;&gt; d &#x3D;&#x3D;&#x3D; item)
+      console.log(temp)
+      
+      this.api.deleteLessonIdUser(temp.id_user).subscribe(response&#x3D;&gt;{
+        this.arrayStudents.splice(index,1)
+        this.dataSource &#x3D; new MatTableDataSource&lt;User&gt;(this.arrayStudents);
+      })
+
+    });
+    this.selection &#x3D; new SelectionModel&lt;User&gt;(true, []);
+  }
+}
+</code></pre>
+    </div>
+</div>
+
+
+                   
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'interface';
+            var COMPODOC_CURRENT_PAGE_URL = 'Grade.html';
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="../js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="../js/menu-wc.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

@@ -1,0 +1,16 @@
+<form class="windowKey">
+    <!--campos donde se muestra la clave generada y el boton para guardar la clave-->
+    <div class="dataInfoKey">
+        <label id="nameUser">{{nameUser}} su clave generada es: </label>
+        <p></p>
+        <input id="textKey" type="text" #someInputControl value="{{keyG}}" />
+        <button [ngxClipboard]="someInputControl" class="btn btn-info" id="copyK-btn">Copiar Key</button>
+        <p></p>
+    </div>
+
+    <!--boton para cerrar el cuadro emergente-->
+    <div mat-dialog-actions>
+        <button mat-button (click)="okClick()" class="btn btn-info" id="btnOk">OK</button>
+    </div>
+
+</form>

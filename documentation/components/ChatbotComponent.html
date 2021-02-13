@@ -1,0 +1,1428 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>chatbot documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">chatbot documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li>ChatbotComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/components/chatbot/chatbot.component.ts</code>
+</p>
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover">
+        <tbody>
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">providers</td>
+                <td class="col-md-9">
+                            <code>{ provide: DateAdapter, useClass: MomentDateAdapter, deps: [MAT_DATE_LOCALE] }</code>
+                                <code><a href="../miscellaneous/variables.html#MY_FORMATS" target="_self" >{ provide: MAT_DATE_FORMATS, useValue: MY_FORMATS }</a></code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-chatbot</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./chatbot.component.css</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./chatbot.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#array_messages">array_messages</a>
+                            </li>
+                            <li>
+                                <a href="#currentUser">currentUser</a>
+                            </li>
+                            <li>
+                                <a href="#date">date</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#dialog">dialog</a>
+                            </li>
+                            <li>
+                                <a href="#formChat">formChat</a>
+                            </li>
+                            <li>
+                                <a href="#user">user</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#addEvent">addEvent</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit">ngOnInit</a>
+                            </li>
+                            <li>
+                                <a href="#openDialogAddFile">openDialogAddFile</a>
+                            </li>
+                            <li>
+                                <a href="#sendMessage">sendMessage</a>
+                            </li>
+                            <li>
+                                <a href="#sendMessageBot">sendMessageBot</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(formbuilder: <a href="https://angular.io/api/forms/FormBuilder" target="_blank">FormBuilder</a>, chabtot: <a href="../injectables/ChatbotService.html">ChatbotService</a>, dialog: MatDialog)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="70" class="link-to-prism">src/app/components/chatbot/chatbot.component.ts:70</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div class="io-description"><p>Constructuor de la clase</p>
+</div>
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                                    <td>Description</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>formbuilder</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/forms/FormBuilder" target="_blank" >FormBuilder</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                        <td>
+                                                                <code><p>contructor base de un form</p>
+</code>
+                                                        </td>
+                                                </tr>
+                                                <tr>
+                                                        <td>chabtot</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/ChatbotService.html" target="_self" >ChatbotService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                        <td>
+                                                                <code><p>es el servicio con el cual podemos interactuar con el chatbot</p>
+</code>
+                                                        </td>
+                                                </tr>
+                                                <tr>
+                                                        <td>dialog</td>
+                                                  
+                                                        <td>
+                                                                    <code>MatDialog</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                        <td>
+                                                                <code><p>es el parametro que nos permite hacer uso de los dialog en esta clase</p>
+</code>
+                                                        </td>
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="addEvent"></a>
+                    <span class="name">
+                        <b>
+                            addEvent
+                        </b>
+                        <a href="#addEvent"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>addEvent(data: <a href="../classes/Message.html">Message</a>, event: MatDatepickerInputEvent<Date>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="155"
+                            class="link-to-prism">src/app/components/chatbot/chatbot.component.ts:155</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Metodo para obtener la fecha de un calendario </p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>data</td>
+                                    <td>
+                                                <code><a href="../classes/Message.html" target="_self" >Message</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>fecha obtenida </p>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>event</td>
+                                    <td>
+                                            <code>MatDatepickerInputEvent&lt;Date&gt;</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>datepicker del cual se obtiene dicha fecha. </p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <b>
+                            ngOnInit
+                        </b>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="92"
+                            class="link-to-prism">src/app/components/chatbot/chatbot.component.ts:92</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Metodo que se ejecuta cuando se crea la ventana</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="openDialogAddFile"></a>
+                    <span class="name">
+                        <b>
+                            openDialogAddFile
+                        </b>
+                        <a href="#openDialogAddFile"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>openDialogAddFile()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="137"
+                            class="link-to-prism">src/app/components/chatbot/chatbot.component.ts:137</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Metodo para abrir un dialog en este caso es el de añadir un archivo</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="sendMessage"></a>
+                    <span class="name">
+                        <b>
+                            sendMessage
+                        </b>
+                        <a href="#sendMessage"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>sendMessage()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="99"
+                            class="link-to-prism">src/app/components/chatbot/chatbot.component.ts:99</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Metodo para enviar mensaje al bot por parte del usuario</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="sendMessageBot"></a>
+                    <span class="name">
+                        <b>
+                            sendMessageBot
+                        </b>
+                        <a href="#sendMessageBot"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>sendMessageBot(data)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="119"
+                            class="link-to-prism">src/app/components/chatbot/chatbot.component.ts:119</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Metodo para enviar un mensaje al bot por medio de un parametro, no usa el valor obtenido del form</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>data</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>mensaje a enviar por parte del usuario </p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+        <h3 id="inputs">
+            Properties
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="array_messages"></a>
+                        <span class="name">
+                            <b>
+                            array_messages</b>
+                            <a href="#array_messages"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../classes/Message.html" target="_self" >Message[]</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>[]</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="60" class="link-to-prism">src/app/components/chatbot/chatbot.component.ts:60</a></div>
+                            </td>
+                        </tr>
+
+
+                    <tr>
+                        <td class="col-md-4">
+                          <div class="io-description">
+                                  <b>Parameters :</b>
+                                  <table class="params">
+                                      <thead>
+                                          <tr>
+                                                <td>Name</td>
+                                                    <td>Description</td>
+                                          </tr>
+                                      </thead>
+                                      <tbody>
+                                                <tr>
+                                                        <td>array_messages</td>
+                                                        <td>
+                                                                <code><p>arreglo que contiene en el todos los mensajes enviados en esa conversacion con el chatbot</p>
+</code>
+                                                        </td>
+                                                </tr>
+                                      </tbody>
+                                  </table>
+                          </div>
+                        </td>
+                    </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="currentUser"></a>
+                        <span class="name">
+                            <b>
+                            currentUser</b>
+                            <a href="#currentUser"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String" target="_blank" >String</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>&quot;&quot;</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="65" class="link-to-prism">src/app/components/chatbot/chatbot.component.ts:65</a></div>
+                            </td>
+                        </tr>
+
+
+                    <tr>
+                        <td class="col-md-4">
+                          <div class="io-description">
+                                  <b>Parameters :</b>
+                                  <table class="params">
+                                      <thead>
+                                          <tr>
+                                                <td>Name</td>
+                                                    <td>Description</td>
+                                          </tr>
+                                      </thead>
+                                      <tbody>
+                                                <tr>
+                                                        <td>currentUser</td>
+                                                        <td>
+                                                                <code><p>es el id del usuario actual del uso del sistema</p>
+</code>
+                                                        </td>
+                                                </tr>
+                                      </tbody>
+                                  </table>
+                          </div>
+                        </td>
+                    </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="date"></a>
+                        <span class="name">
+                            <b>
+                            date</b>
+                            <a href="#date"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>new FormControl(moment())</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="50" class="link-to-prism">src/app/components/chatbot/chatbot.component.ts:50</a></div>
+                            </td>
+                        </tr>
+
+
+                    <tr>
+                        <td class="col-md-4">
+                          <div class="io-description">
+                                  <b>Parameters :</b>
+                                  <table class="params">
+                                      <thead>
+                                          <tr>
+                                                <td>Name</td>
+                                                    <td>Description</td>
+                                          </tr>
+                                      </thead>
+                                      <tbody>
+                                                <tr>
+                                                        <td>date</td>
+                                                        <td>
+                                                                <code><p>es el parametro con el cual obtenemos la fecha del datepicker ´date´</p>
+</code>
+                                                        </td>
+                                                </tr>
+                                      </tbody>
+                                  </table>
+                          </div>
+                        </td>
+                    </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="dialog"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            dialog</b>
+                            <a href="#dialog"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>MatDialog</code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="82" class="link-to-prism">src/app/components/chatbot/chatbot.component.ts:82</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description">es el parametro que nos permite hacer uso de los dialog en esta clase</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="formChat"></a>
+                        <span class="name">
+                            <b>
+                            formChat</b>
+                            <a href="#formChat"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../interfaces/Group.html" target="_self" >FormGroup</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="55" class="link-to-prism">src/app/components/chatbot/chatbot.component.ts:55</a></div>
+                            </td>
+                        </tr>
+
+
+                    <tr>
+                        <td class="col-md-4">
+                          <div class="io-description">
+                                  <b>Parameters :</b>
+                                  <table class="params">
+                                      <thead>
+                                          <tr>
+                                                <td>Name</td>
+                                                    <td>Description</td>
+                                          </tr>
+                                      </thead>
+                                      <tbody>
+                                                <tr>
+                                                        <td>formChat</td>
+                                                        <td>
+                                                                <code><p>form del chat cuenta con el atributo message</p>
+</code>
+                                                        </td>
+                                                </tr>
+                                      </tbody>
+                                  </table>
+                          </div>
+                        </td>
+                    </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="user"></a>
+                        <span class="name">
+                            <b>
+                            user</b>
+                            <a href="#user"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../classes/User.html" target="_self" >User</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>JSON.parse(localStorage.getItem(&quot;user&quot;))</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="70" class="link-to-prism">src/app/components/chatbot/chatbot.component.ts:70</a></div>
+                            </td>
+                        </tr>
+
+
+                    <tr>
+                        <td class="col-md-4">
+                          <div class="io-description">
+                                  <b>Parameters :</b>
+                                  <table class="params">
+                                      <thead>
+                                          <tr>
+                                                <td>Name</td>
+                                                    <td>Description</td>
+                                          </tr>
+                                      </thead>
+                                      <tbody>
+                                                <tr>
+                                                        <td>user</td>
+                                                        <td>
+                                                                <code><p>es el usuario actual del sistema este valor cuenta con todos los atributos de la clase usuario</p>
+</code>
+                                                        </td>
+                                                </tr>
+                                      </tbody>
+                                  </table>
+                          </div>
+                        </td>
+                    </tr>
+            </tbody>
+        </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit } from &#x27;@angular/core&#x27;;
+import { FormGroup, FormBuilder, FormControl } from &#x27;@angular/forms&#x27;;
+import { ChatbotService } from &#x27;src/app/services/chatbot/chatbot.service&#x27;;
+import { Observable } from &#x27;rxjs&#x27;;
+import { User } from &#x27;src/app/models/User.model&#x27;;
+import { Message } from &#x27;src/app/models/Message.model&#x27;;
+import { MatDialog, MatDatepickerInputEvent } from &#x27;@angular/material&#x27;;
+import { AddFilesComponent } from &#x27;src/app/dialogs/add-files/add-files.component&#x27;;
+
+import * as _moment from &#x27;moment&#x27;;
+import {MomentDateAdapter} from &#x27;@angular/material-moment-adapter&#x27;;
+import {DateAdapter, MAT_DATE_FORMATS, MAT_DATE_LOCALE} from &#x27;@angular/material/core&#x27;;
+/**
+ * variable para obtneer el dia
+ */
+const moment &#x3D; _moment;
+
+/**
+ * Fomato del date picker 
+ */
+export const MY_FORMATS &#x3D; {
+  parse: {
+    dateInput: &#x27;LL&#x27;,
+  },
+  display: {
+    dateInput: &#x27;LL&#x27;,
+    monthYearLabel: &#x27;MMM YYYY&#x27;,
+    dateA11yLabel: &#x27;LL&#x27;,
+    monthYearA11yLabel: &#x27;MMMM YYYY&#x27;,
+  },
+};
+@Component({
+  selector: &#x27;app-chatbot&#x27;,
+  templateUrl: &#x27;./chatbot.component.html&#x27;,
+  styleUrls: [&#x27;./chatbot.component.css&#x27;],
+  providers: 
+  [
+    {provide: DateAdapter, useClass: MomentDateAdapter, deps: [MAT_DATE_LOCALE]},
+    {provide: MAT_DATE_FORMATS, useValue: MY_FORMATS},
+  ],
+})
+
+
+export class ChatbotComponent implements OnInit {
+ 
+
+  /**
+   * @param date es el parametro con el cual obtenemos la fecha del datepicker ´date´
+  */
+  date &#x3D; new FormControl(moment());
+  
+  /**
+   * @param formChat form del chat cuenta con el atributo message
+   */
+  formChat:FormGroup;
+  
+  /**
+   *  @param array_messages arreglo que contiene en el todos los mensajes enviados en esa conversacion con el chatbot
+   */
+  array_messages: Message[]&#x3D;[];
+
+  /**
+   * @param currentUser es el id del usuario actual del uso del sistema
+   */
+  currentUser:String &#x3D;&quot;&quot;;
+  
+  /**
+   * @param user es el usuario actual del sistema este valor cuenta con todos los atributos de la clase usuario
+   */
+  user:User &#x3D; JSON.parse(localStorage.getItem(&quot;user&quot;))
+
+  
+  /**
+   * Constructuor de la clase
+   * @param formbuilder contructor base de un form
+   * @param chabtot es el servicio con el cual podemos interactuar con el chatbot
+   * @param dialog es el parametro que nos permite hacer uso de los dialog en esta clase
+   */
+  constructor(
+    private formbuilder : FormBuilder,
+    private chabtot: ChatbotService,
+    public dialog : MatDialog
+  ) {
+    this.formChat &#x3D; this.formbuilder.group({
+      message : [&#x27;&#x27;],
+    })
+   }
+
+   /**
+    * Metodo que se ejecuta cuando se crea la ventana
+    */
+  ngOnInit() {
+    this.currentUser&#x3D;this.user.id
+    
+  }
+  /**
+   * Metodo para enviar mensaje al bot por parte del usuario
+   */
+  sendMessage(){
+    let value &#x3D; this.formChat.get(&quot;message&quot;).value
+    let mensajeUsuario:Message &#x3D; new Message (value, this.user.id, this.user.username) ;
+    this.chabtot.converse(mensajeUsuario.content).then(responseBot&#x3D;&gt;{
+      if(&quot;¿Qué día sera el examen?&quot;&#x3D;&#x3D;responseBot.content){
+       console.log(&quot;el dia&quot;) 
+        responseBot.dateCondition&#x3D;true;
+      }
+      this.array_messages.push(mensajeUsuario)    
+      this.array_messages.push(responseBot)    
+      
+
+    })
+    this.formChat.reset();
+  }
+  /**
+   * Metodo para enviar un mensaje al bot por medio de un parametro, no usa el valor obtenido del form
+   * @param data mensaje a enviar por parte del usuario 
+   * @event addEvent se ejecuta exclusivamente despues de la funcion addEvent
+   */
+  sendMessageBot(data){
+    let value &#x3D; data
+    let mensajeUsuario:Message &#x3D; new Message (value, this.user.id, this.user.username) ;
+    this.chabtot.converse(mensajeUsuario.content).then(responseBot&#x3D;&gt;{
+      if(&quot;¿Qué día sera el examen?&quot;&#x3D;&#x3D;responseBot.content){
+       console.log(&quot;el dia&quot;) 
+        responseBot.dateCondition&#x3D;true;
+      }
+      this.array_messages.push(mensajeUsuario)    
+      this.array_messages.push(responseBot)    
+      
+
+    })
+    this.formChat.reset();
+  }
+  /**
+   * Metodo para abrir un dialog en este caso es el de añadir un archivo
+   */
+  openDialogAddFile(){
+    const dialogRef &#x3D; this.dialog.open(AddFilesComponent);
+    dialogRef.afterClosed().subscribe(response&#x3D;&gt;{
+         
+      if (response) {
+        console.log(response);
+        let value &#x3D; &quot;Se ha añadido un nuevo material con la siguiente URL: &quot;+response.url + &quot; para la clase del &quot;+response.grado+&#x27; &quot;&#x27;+response.grupo+
+        &#x27;&quot;para la materia de &#x27; +response.materia +&quot; con la siguiente descripcion: &quot;+response.descripcion
+        let mesageBot:Message &#x3D; new Message (value, &quot;bot&quot;, &quot;bot&quot;);
+        this.array_messages.push(mesageBot) 
+      }      
+    })
+  }
+  /**
+   * Metodo para obtener la fecha de un calendario 
+   * @param data fecha obtenida 
+   * @param event datepicker del cual se obtiene dicha fecha. 
+   */
+  addEvent(data: Message, event: MatDatepickerInputEvent&lt;Date&gt;) {
+    console.log(&quot;evento date picker&quot;)
+    data.dateActivate&#x3D;true
+    let temp:string &#x3D;&#x60;${event.value}&#x60;
+    let dias &#x3D; temp.split(&quot; &quot;)[0]
+    let mes:string &#x3D; temp.split(&quot; &quot;)[1].toString()
+    let dia &#x3D; temp.split(&quot; &quot;)[2]
+    let año &#x3D; temp.split(&quot; &quot;)[3]
+    
+    switch(mes){
+      case &quot;Jan&quot;: {
+        mes&#x3D;&quot;Enero&quot;
+        break;
+      }
+      case &quot;Feb&quot;: {
+        mes&#x3D;&quot;Febrero&quot;
+        break;
+      }
+      case &quot;Mar&quot;: {
+        mes&#x3D;&quot;Marzo&quot;
+        break;
+      }
+      case &quot;Apr&quot;: {
+        mes&#x3D;&quot;Abril&quot;
+        break;
+      }
+      case &quot;May&quot;: {
+        mes&#x3D;&quot;Mayo&quot;
+        break;
+      }
+      case &quot;Jun&quot;: {
+        mes&#x3D;&quot;Junio&quot;
+        break;
+      }
+      case &quot;Jul&quot;: {
+        mes&#x3D;&quot;Julio&quot;
+        break;
+      }
+      case &quot;Aug&quot;: {
+        mes&#x3D;&quot;Agosto&quot;
+        break;
+      }
+      case &quot;Sep&quot;: {
+        mes&#x3D;&quot;Septiembre&quot;
+        break;
+      }
+      case &quot;Oct&quot;: {
+        mes&#x3D;&quot;Octubre&quot;
+        
+        break;
+      }
+      case &quot;Nov&quot;: {
+        mes&#x3D;&quot;Noviembre&quot;
+        break;
+      }
+      case &quot;Dec&quot;: {
+        mes&#x3D;&quot;Diciembre&quot;
+        break;
+      }
+      default:
+        break;
+    }
+    let value &#x3D; mes+&quot; &quot;+dia+ &quot; del &quot;+ año;
+    // let mesageBot:Message &#x3D; new Message (value, &quot;bot&quot;, &quot;bot&quot;);
+    // this.array_messages.push(mesageBot) 
+    this.sendMessageBot(value)
+  }
+}
+
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;div class&#x3D;&quot;image_background&quot;&gt;
+    &lt;!-- nav bar --&gt;
+
+    &lt;app-header&gt;&lt;/app-header&gt;
+
+    &lt;!-- /nav bar --&gt;
+    &lt;div class&#x3D;&quot;background_chatbot&quot;&gt;
+        &lt;div class&#x3D;&quot;&quot; style&#x3D;&quot;width: 100%;&quot;&gt;
+            &lt;!-- Form con el metodo de enviar mensajes --&gt;
+            &lt;form [formGroup]&#x3D;&quot;formChat&quot; (ngSubmit)&#x3D;&quot;sendMessage()&quot;&gt;
+                &lt;div class&#x3D;&quot;form-group shadow-none p-3 mb-5 rounded&quot; style&#x3D;&quot;width:auto;  height: 90%; max-height: 650px; overflow-y: auto; overflow-x: hidden;&quot;&gt;
+                    &lt;!-- Chat --&gt;
+                    &lt;div class&#x3D;&quot;row&quot; *ngFor&#x3D;&quot;let msg of array_messages&quot;&gt;
+                        &lt;p class&#x3D;&quot;col-5 ml-3 xl-2
+                                            shadow-sm p-3 mb-5 bg-white rounded 
+                                            rounded-right text-break align-self-start&quot; *ngIf&#x3D;&quot;msg.idUser !&#x3D; currentUser&quot;&gt;
+                            &lt;strong&gt;{{ msg.name }}:&lt;/strong&gt; {{ msg.content }}
+                        &lt;/p&gt;
+                        &lt;p class&#x3D;&quot; col-5 mr-3 
+                                            rounded-left text-break 
+                                            shadow-sm p-3 mb-5 bg-white rounded
+                                            align-self-end ml-auto&quot; *ngIf&#x3D;&quot;msg.idUser &#x3D;&#x3D; currentUser&quot;&gt;&lt;strong&gt;{{ msg.name }}:&lt;/strong&gt; {{ msg.content }}&lt;/p&gt;
+
+
+                        &lt;div *ngIf&#x3D;&quot;msg.dateCondition &amp;&amp; msg.idUser !&#x3D; currentUser&quot; class&#x3D;&quot;col-5 ml-3 xl-2 shadow-sm p-3 mb-5 bg-transparent rounded rounded-right text-break align-self-start&quot;&gt; &lt;/div&gt;
+                        &lt;p *ngIf&#x3D;&quot;msg.dateCondition &amp;&amp; msg.idUser !&#x3D; currentUser&quot; class&#x3D;&quot;col-5 ml-3 xl-2 shadow-sm p-3 mb-5 bg-white rounded rounded-right text-break align-self-start&quot;&gt;
+                            Selecciones la fecha
+                            &lt;mat-form-field color&#x3D;&quot;accent&quot;&gt;
+                                &lt;input matInput [matDatepicker]&#x3D;&quot;picker&quot; placeholder&#x3D;&quot;Seleccione el dia&quot; disabled (dateInput)&#x3D;&quot;addEvent(msg, $event)&quot; [formControl]&#x3D;&quot;date&quot;&gt;
+                                &lt;mat-datepicker-toggle matSuffix [for]&#x3D;&quot;picker&quot;&gt;&lt;/mat-datepicker-toggle&gt;
+                                &lt;mat-datepicker disabled&#x3D;&quot;{{msg.dateActivate}}&quot; #picker&gt;&lt;/mat-datepicker&gt;
+                            &lt;/mat-form-field&gt;
+                        &lt;/p&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+
+                &lt;div class&#x3D;&quot;background_bar&quot;&gt;
+                    &lt;!-- Boton para añadir un archivo   --&gt;
+
+                    &lt;form *ngIf&#x3D;&quot;user.type&#x3D;&#x3D;&#x27;Profesor&#x27;&quot; class&#x3D;&quot;horizontal row&quot;&gt;
+                        &lt;button [matMenuTriggerFor]&#x3D;&quot;menu&quot; class&#x3D;&quot;add&quot;&gt;
+                        &lt;i class&#x3D;&quot;material-icons&quot;&gt;
+                            add
+                        &lt;/i&gt;       
+                        &lt;mat-menu #menu&#x3D;&quot;matMenu&quot;&gt;
+                            &lt;button mat-menu-item (click)&#x3D;&quot;openDialogAddFile()&quot;&gt;
+                                &lt;mat-icon&gt;file_copy&lt;/mat-icon&gt;
+                                &lt;span&gt;Añadir un archivo &lt;/span&gt;
+                            &lt;/button&gt;
+                        &lt;/mat-menu&gt;
+
+                        &lt;/button&gt;
+
+                    &lt;/form&gt;
+                    &lt;!-- /Boton para añadir un archivo   --&gt;
+
+                    &lt;!-- Input para obtener el texto del mensaje --&gt;
+                    &lt;div class&#x3D;&quot;horizontal&quot;&gt;
+                        &lt;input formControlName&#x3D;&quot;message&quot; type&#x3D;&quot;text&quot; class&#x3D;&quot; border border-dark  rounded  text_bar&quot; matInput placeholder&#x3D;&quot;Tu mensaje va aqui&quot;&gt;
+                    &lt;/div&gt;
+                    &lt;div class&#x3D;&quot;horizontal row&quot;&gt;
+                        &lt;button (click)&#x3D;&quot;sendMessage()&quot; class&#x3D;&quot;send&quot; mat-button&gt;
+                                &lt;i class&#x3D;&quot;material-icons&quot;&gt;
+                                send
+                                &lt;/i&gt;
+                            &lt;/button&gt;
+                    &lt;/div&gt;
+                    &lt;!-- /Input para obtener el texto del mensaje --&gt;
+
+                    &lt;div class&#x3D;&quot;horizontal&quot;&gt;&lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/form&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./chatbot.component.css</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">/* */
+
+@import &quot;@angular/material/prebuilt-themes/indigo-pink.css&quot;;
+.image_background {
+    position: absolute !important;
+    top: 0px !important;
+    bottom: 0px !important;
+    width: 100vw !important;
+    height: 100vh !important;
+    padding: 0px !important;
+    max-width: 100vw;
+    max-height: 100vh;
+    background-image: url(&#x27;/assets/pictures/paper.jpg&#x27;);
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+.centrado {
+    text-align: center;
+}
+
+.send {
+    position: absolute;
+    right: 1%;
+    bottom: 15%;
+    background: none;
+}
+
+.add {
+    background: none;
+    position: absolute;
+    left: 1%;
+    bottom: 15%;
+}
+
+.text_bar {
+    font-size: 20px;
+    text-indent: 7px;
+    border-radius: 100px;
+    margin: auto;
+    background: #FFF;
+    position: absolute;
+    border-style: solid;
+    border-color: #707070;
+    left: 0px;
+    right: 0px;
+    bottom: 5px;
+    width: 85%;
+    max-width: 1360px;
+    max-height: 700px;
+    height: 40px;
+    z-index: 1;
+}
+
+.background_bar {
+    max-width: 1360px;
+    max-height: 700px;
+    background: #D5D5D5;
+    position: absolute;
+    /*El div será ubicado con relación a la pantalla*/
+    left: 0px;
+    /*A la derecha deje un espacio de 0px*/
+    right: 0px;
+    /*A la izquierda deje un espacio de 0px*/
+    bottom: 0px;
+    width: 100%;
+    /*Abajo deje un espacio de 0px*/
+    height: 50px;
+    /*alto del div*/
+    z-index: 0;
+}
+
+.horizontal {
+    display: inline-block;
+}
+
+.background_chatbot {
+    border-radius: 30px;
+    margin-top: 2%;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 100%;
+    max-width: 1360px;
+    max-height: 700px;
+    background-image: url(&#x27;/assets/pictures/background_chatbot.jpg&#x27;);
+}
+
+.chat {
+    border: 0px;
+    border-radius: 0px;
+    height: 93%;
+    overflow-y: auto;
+}
+
+.background_wor_in_chat {
+    display: table-row;
+    left: 0px;
+}
+
+.background_wor_in_chat2 {
+    right: 0;
+    height: auto;
+    word-wrap: break-word;
+}
+
+.word_in_chat_left {
+    border-radius: 30px;
+    background-color: white;
+    text-align: left;
+    left: 0px !important;
+    width: 100%;
+    padding: 10px 10px 10px 10px;
+}
+
+.word_in_chat_right {
+    display: inline-block;
+    right: 0px !important;
+    text-align: left !important;
+    border-radius: 30px;
+    background-color: white;
+    width: auto;
+    max-width: 90%;
+    padding: 10px 10px 10px 10px;
+}</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><div class="image_background">    <!-- nav bar -->    <app-header></app-header>    <!-- /nav bar -->    <div class="background_chatbot">        <div class="" style="width: 100%;">            <!-- Form con el metodo de enviar mensajes -->            <form [formGroup]="formChat" (ngSubmit)="sendMessage()">                <div class="form-group shadow-none p-3 mb-5 rounded" style="width:auto;  height: 90%; max-height: 650px; overflow-y: auto; overflow-x: hidden;">                    <!-- Chat -->                    <div class="row" *ngFor="let msg of array_messages">                        <p class="col-5 ml-3 xl-2                                            shadow-sm p-3 mb-5 bg-white rounded                                             rounded-right text-break align-self-start" *ngIf="msg.idUser != currentUser">                            <strong>{{ msg.name }}:</strong> {{ msg.content }}                        </p>                        <p class=" col-5 mr-3                                             rounded-left text-break                                             shadow-sm p-3 mb-5 bg-white rounded                                            align-self-end ml-auto" *ngIf="msg.idUser == currentUser"><strong>{{ msg.name }}:</strong> {{ msg.content }}</p>                        <div *ngIf="msg.dateCondition && msg.idUser != currentUser" class="col-5 ml-3 xl-2 shadow-sm p-3 mb-5 bg-transparent rounded rounded-right text-break align-self-start"> </div>                        <p *ngIf="msg.dateCondition && msg.idUser != currentUser" class="col-5 ml-3 xl-2 shadow-sm p-3 mb-5 bg-white rounded rounded-right text-break align-self-start">                            Selecciones la fecha                            <mat-form-field color="accent">                                <input matInput [matDatepicker]="picker" placeholder="Seleccione el dia" disabled (dateInput)="addEvent(msg, $event)" [formControl]="date">                                <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>                                <mat-datepicker disabled="{{msg.dateActivate}}" #picker></mat-datepicker>                            </mat-form-field>                        </p>                    </div>                </div>                <div class="background_bar">                    <!-- Boton para añadir un archivo   -->                    <form *ngIf="user.type==\'Profesor\'" class="horizontal row">                        <button [matMenuTriggerFor]="menu" class="add">                        <i class="material-icons">                            add                        </i>                               <mat-menu #menu="matMenu">                            <button mat-menu-item (click)="openDialogAddFile()">                                <mat-icon>file_copy</mat-icon>                                <span>Añadir un archivo </span>                            </button>                        </mat-menu>                        </button>                    </form>                    <!-- /Boton para añadir un archivo   -->                    <!-- Input para obtener el texto del mensaje -->                    <div class="horizontal">                        <input formControlName="message" type="text" class=" border border-dark  rounded  text_bar" matInput placeholder="Tu mensaje va aqui">                    </div>                    <div class="horizontal row">                        <button (click)="sendMessage()" class="send" mat-button>                                <i class="material-icons">                                send                                </i>                            </button>                    </div>                    <!-- /Input para obtener el texto del mensaje -->                    <div class="horizontal"></div>                </div>            </form>        </div>    </div></div></div>'
+    var COMPONENTS = [{'name': 'AbcComponent', 'selector': 'app-abc'},{'name': 'AddFilesComponent', 'selector': 'app-add-files'},{'name': 'AddStudentComponent', 'selector': 'app-add-student'},{'name': 'AddSubjectComponent', 'selector': 'app-add-subject'},{'name': 'AlertComponent', 'selector': 'app-alert'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'ChatbotComponent', 'selector': 'app-chatbot'},{'name': 'HeaderComponent', 'selector': 'app-header'},{'name': 'LessonsComponent', 'selector': 'app-lessons'},{'name': 'LoginComponent', 'selector': 'app-login'},{'name': 'MenuComponent', 'selector': 'app-menu'},{'name': 'RegisterComponent', 'selector': 'app-register'},{'name': 'UsersLessonsComponent', 'selector': 'app-users-lessons'},{'name': 'ValidateUsersComponent', 'selector': 'app-validate-users'},{'name': 'XyzComponent', 'selector': 'app-xyz'}];
+    var DIRECTIVES = [];
+    var ACTUAL_COMPONENT = {'name': 'ChatbotComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+                   
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'ChatbotComponent.html';
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="../js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="../js/menu-wc.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

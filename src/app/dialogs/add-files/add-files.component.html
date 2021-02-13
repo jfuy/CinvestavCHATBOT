@@ -1,0 +1,52 @@
+<form [formGroup]="formFile">
+
+    <!--formulario para añadir nuevos archivos-->
+    <div mat-dialog-content>
+        <!--para ingresar la url-->
+        <mat-form-field>
+            <input matInput formControlName="url" placeholder="¿Cual es la URL?">
+        </mat-form-field>
+        <p></p>
+        <!--para asignar el grado-->
+        <mat-form-field>
+            <mat-label>Grado</mat-label>
+            <mat-select formControlName="grado" (selectionChange)="darMaterias()" [(ngModel)]="gradeSelected">
+                <mat-option *ngFor="let grade of grades" [value]="grade.value">
+                    {{grade.viewValue}}
+                </mat-option>
+            </mat-select>
+        </mat-form-field>
+        <p></p>
+        <!--para asignar el grupo-->
+        <mat-form-field>
+            <mat-label>Grupo</mat-label>
+            <mat-select formControlName="grupo" [(ngModel)]="groupSelected">
+                <mat-option *ngFor="let group of groups" [value]="group.value">
+                    {{group.viewValue}}
+                </mat-option>
+            </mat-select>
+        </mat-form-field>
+        <p></p>
+        <!--para asignar materia-->
+        <mat-form-field>
+            <mat-label>Materia</mat-label>
+            <mat-select formControlName="materia" [(ngModel)]="materiaSelected">
+                <mat-option *ngFor="let subject of subjects" [value]="subject.value">
+                    {{subject.viewValue}}
+                </mat-option>
+            </mat-select>
+        </mat-form-field>
+        <p></p>
+        <!--para agregar una descripcion-->
+        <mat-form-field>
+            <input matInput formControlName="descripcion" placeholder="Añade una descripcion">
+        </mat-form-field>
+
+    </div>
+    <!--botones para cancelar y guardar el archivo-->
+    <div mat-dialog-actions>
+        <button mat-button (click)="onClickNo()">No</button>
+        <button mat-button type="submit" [disabled]="formFile.invalid" [mat-dialog-close]="formFile.value" (click)="sendFile()">Si</button>
+    </div>
+
+</form>

@@ -1,0 +1,35 @@
+<div class="image_background">
+    <app-header></app-header>
+
+    <div class="background_login transparent " id="principal-box">
+        <div class="centrado">
+            <div>
+                <div class="circulo_login">
+                </div>
+            </div>
+            <!-- Form para enviar los datos para iniciar sesion -->
+            <div>
+                <form [formGroup]="formLogin" autocomplete="off" (ngSubmit)="sendLogin()">
+                    <p>
+                        <input type="email" class="input_login" placeholder="Email" formControlName="email">
+                    </p>
+
+                    <p>
+                        <input type="password" class="input_login" placeholder="Password" formControlName="password">
+                    </p>
+
+                    <div class="button">
+                        <button class="button_login" type="submit" mat-button>Iniciar sesión</button>
+                    </div>
+                    <br>
+                    <p style="color: rgb(24, 22, 22); margin-top: 5px;">
+                        ¿No tienes cuenta? <button class="button_nocss" (click)="register()"><strong>Registrate</strong></button>
+                    </p>
+
+                </form>
+            </div>
+        </div>
+
+    </div>
+</div>
+<!-- <img src="assets\pictures\paper.jpg" class=".img-fluid. max-width: 100%;" style="height: auto;"> -->

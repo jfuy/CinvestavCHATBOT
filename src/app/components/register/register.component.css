@@ -1,0 +1,188 @@
+/**
+* prueba
+*/
+
+.example-radio-group {
+    align-content: center;
+    flex-direction: row;
+    margin: 15px 0;
+}
+
+.example-radio-button {
+    color: white;
+    margin: 5px;
+}
+
+.image_background {
+    /* position: absolute !important; */
+    top: 0px !important;
+    bottom: 0px !important;
+    width: 100vw !important;
+    height: 100vh !important;
+    padding: 0px !important;
+    max-width: 100vw;
+    max-height: 100vh;
+    background-image: url('/assets/pictures/fondo_registrar.jpg');
+    background-size: cover;
+    background-position: center;
+    overflow: auto;
+    position: relative;
+}
+
+.background_register {
+    width: 1000px;
+    max-width: 1000px;
+    margin-top: 2%;
+    height: auto;
+    top: 2%;
+    position: relative;
+    right: 16px;
+    left: 16px;
+    font-size: 18px;
+    margin: auto;
+    background-color: rgb(37, 62, 118, .35)
+}
+
+.input_register {
+    text-align: center;
+    text-indent: 7px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 30px;
+    margin-bottom: 10px;
+    background-color: #47649D;
+    color: white;
+    max-width: 505px;
+    width: 70%;
+    height: 50px;
+    max-height: 100px;
+    z-index: 1;
+    /* border: .1px; */
+    border-width: 1px;
+    border-color: #707070;
+}
+
+.input_register_apellidos {
+    margin-right: 1%;
+    text-indent: 7px;
+    border-radius: 30px;
+    margin-bottom: 10px;
+    background-color: #47649D;
+    color: white;
+    max-width: 200px;
+    width: 70%;
+    height: 50px;
+    max-height: 100px;
+    z-index: 1;
+    /* border: .1px; */
+    border-width: 1px;
+    border-color: #707070;
+}
+
+.input_register_apellidos::placeholder {
+    color: white;
+}
+
+.input_edad {
+    text-indent: 7px;
+    border-radius: 30px;
+    margin-bottom: 10px;
+    background-color: #47649D;
+    color: white;
+    max-width: 100px;
+    width: 70%;
+    height: 50px;
+    max-height: 100px;
+    z-index: 1;
+    /* border: .1px; */
+    border-width: 1px;
+    border-color: #707070;
+}
+
+.input_edad::placeholder {
+    color: white;
+    text-align: center;
+}
+
+.input_register::placeholder {
+    color: white;
+    text-align: center;
+}
+
+.centrado {
+    text-align: center
+}
+
+.circulo_register {
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url('/assets/pictures/avatar1.png');
+    width: 125px;
+    height: 120px;
+    border-radius: 100%;
+    margin-bottom: 45px;
+}
+
+.button_register {
+    background-color: #47649D;
+    color: white;
+    border-color: #707070;
+    max-height: 100px;
+    z-index: 1;
+    height: 60px;
+    width: 250px;
+    max-width: 250px;
+    border-radius: 30px;
+    font-size: 20px;
+}
+
+.button_nocss {
+    background: none;
+    border: 0;
+    color: inherit;
+    /* cursor: default; */
+    font: inherit;
+    line-height: normal;
+    overflow: visible;
+    padding: 0;
+    -webkit-user-select: none;
+    /* for button */
+    -webkit-appearance: button;
+    /* for input */
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus {
+    border-color: #707070 !important;
+    background-color: #47649D !important;
+    /* background-color: #FAFFBD !important; */
+}
+
+@media screen and (max-width: 905px) {
+    .background_register,
+    .button_register,
+    .input_register {
+        margin: auto;
+        width: 100%;
+        margin-top: 0;
+        text-align: center;
+    }
+}
+
+.btn-return {
+    top: 45%;
+    background: rgba(51, 51, 51, 0.7);
+    color: rgba(214, 226, 236, 0.932);
+    border-top-right-radius: 45%;
+    border-bottom-right-radius: 45%;
+    width: 90px;
+    height: 80px;
+    transform: translate(-5%, -480%);
+}
+
+.btn-return .material-icons {
+    font-size: 60px;
+}

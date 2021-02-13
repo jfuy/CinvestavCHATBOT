@@ -1,0 +1,15 @@
+<!-- <h1 mat-dialog-title>Add file</h1>
+<mat-dialog-content>
+    Content goes here
+</mat-dialog-content>
+<mat-dialog-actions>
+    <button mat-button>Add</button>
+    <button mat-button>Cancel</button>
+</mat-dialog-actions> -->
+<div mat-dialog-content>
+    {{message}}
+    <div mat-dialog-actions>
+        <button mat-button (click)="onClickNo()">No</button>
+        <button mat-button [mat-dialog-close]="true">Si</button>
+    </div>
+</div>

@@ -1,0 +1,173 @@
+/* */
+
+@import "@angular/material/prebuilt-themes/indigo-pink.css";
+.image_background {
+    position: absolute !important;
+    top: 0px !important;
+    bottom: 0px !important;
+    width: 100vw !important;
+    height: 100vh !important;
+    padding: 0px !important;
+    max-width: 100vw;
+    max-height: 100vh;
+    background-image: url('/assets/pictures/paper.jpg');
+    background-size: cover;
+    background-position: center;
+    overflow: auto;
+}
+
+.centrado {
+    text-align: center;
+}
+
+.send {
+    position: absolute;
+    right: 1%;
+    bottom: 15%;
+    background: none;
+}
+
+.add {
+    background: #313030;
+    color: white;
+    position: absolute;
+    left: 0.1%;
+    margin-left: 100%;
+    bottom: 15%;
+}
+
+#btn-return {
+    width: 3%;
+    height: 4.2%;
+    border-radius: 350px;
+    margin-left: 2%;
+    text-align: center;
+    vertical-align: middle;
+    color: black;
+    border-color: #0f0506;
+}
+
+.text_bar {
+    font-size: 20px;
+    text-indent: 7px;
+    border-radius: 100px;
+    margin: auto;
+    background: #FFF;
+    position: absolute;
+    border-style: solid;
+    border-color: #707070;
+    left: 0px;
+    right: 0px;
+    bottom: 5px;
+    width: 85%;
+    max-width: 1360px;
+    max-height: 700px;
+    height: 40px;
+    z-index: 1;
+}
+
+.background_bar {
+    background: #d5d5d500;
+    position: absolute;
+    align-items: center;
+    /*El div será ubicado con relación a la pantalla*/
+    left: 0px;
+    /*A la derecha deje un espacio de 0px*/
+    right: 0px;
+    /*A la izquierda deje un espacio de 0px*/
+    bottom: 0px;
+    width: 20%;
+    /*Abajo deje un espacio de 0px*/
+    height: 50px;
+    /*alto del div*/
+    z-index: 0;
+}
+
+.horizontal {
+    display: inline-block;
+}
+
+.background_chatbot {
+    border-radius: 30px;
+    margin-top: 2%;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    max-height: 700px;
+    background: none;
+}
+
+.chatbotBox {
+    margin-left: 20%;
+    margin-right: auto;
+    align-items: center;
+    max-width: 100%;
+}
+
+.chat {
+    border: 0px;
+    border-radius: 0px;
+    height: 93%;
+    overflow-y: auto;
+}
+
+.background_wor_in_chat {
+    display: table-row;
+    left: 0px;
+}
+
+.background_wor_in_chat2 {
+    right: 0;
+    height: auto;
+    word-wrap: break-word;
+}
+
+.word_in_chat_left {
+    border-radius: 30px;
+    background-color: white;
+    text-align: left;
+    left: 0px !important;
+    width: 100%;
+    padding: 10px 10px 10px 10px;
+}
+
+.word_in_chat_right {
+    display: inline-block;
+    right: 0px !important;
+    text-align: left !important;
+    border-radius: 30px;
+    background-color: white;
+    width: auto;
+    max-width: 90%;
+    padding: 10px 10px 10px 10px;
+}
+
+#icon-return {
+    position: fixed;
+    top: 45%;
+    background: rgba(51, 51, 51, 0.7);
+    width: 90px;
+    height: 80px;
+    border-top-right-radius: 45%;
+    border-bottom-right-radius: 45%;
+    /* font-size: 80px; */
+    color: rgb(228, 225, 225);
+}
+
+.btn-return {
+    top: 45%;
+    background: rgba(51, 51, 51, 0.7);
+    color: rgba(214, 226, 236, 0.932);
+    border-top-right-radius: 45%;
+    border-bottom-right-radius: 45%;
+    width: 90px;
+    height: 80px;
+    transform: translate(-5%, -550%);
+}
+
+.btn-return .material-icons {
+    font-size: 60px;
+}

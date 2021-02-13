@@ -1,0 +1,104 @@
+<div class="image_background">
+
+    <app-header></app-header>
+
+    <br><br><br><br>
+    <!--para filtrar los datos y alumnos a calificar por grado, grupo y materia-->
+    <p class="title">Registrar Calificaciones</p>
+    <br>
+    <div class="centrado2">
+        <mat-toolbar-row>
+            <mat-form-field style=" font-size: 14px;">
+                <mat-label>Grado</mat-label>
+                <mat-select (selectionChange)="searchStudents()" [(ngModel)]="gradeSelected">
+                    <mat-option *ngFor="let grade of grades" [value]="grade.value">
+                        {{grade.viewValue}}
+                    </mat-option>
+                </mat-select>
+            </mat-form-field>
+
+            <mat-form-field style=" font-size: 14px;">
+                <mat-label>Grupo</mat-label>
+                <mat-select (selectionChange)="searchStudents()" [(ngModel)]="groupSelected">
+                    <mat-option *ngFor="let group of groups" [value]="group.value">
+                        {{group.viewValue}}
+                    </mat-option>
+                </mat-select>
+            </mat-form-field>
+
+            <mat-form-field style=" font-size: 14px;">
+                <mat-label>Materia</mat-label>
+                <mat-select [(ngModel)]="materiaSelected">
+                    <mat-option *ngFor="let subject of subjects" [value]="subject.value">
+                        {{subject.viewValue}}
+                    </mat-option>
+                </mat-select>
+            </mat-form-field>
+
+        </mat-toolbar-row>
+    </div>
+    <!--/Buscador-->
+
+    <br><br><br>
+
+    <!-- tabla de alumnos -->
+    <div class="example-container centrado">
+        <mat-table mat-table [dataSource]="dataSource" matSort style="max-height: 300px;">
+
+            <!-- ID Column -->
+            <ng-container matColumnDef="id">
+                <mat-header-cell mat-header-cell *matHeaderCellDef mat-sort-header> ID </mat-header-cell>
+                <mat-cell *matCellDef="let row"> {{row.id}} </mat-cell>
+                <mat-footer-cell *matFooterCellDef></mat-footer-cell>
+            </ng-container>
+
+            <!-- Name Column -->
+            <ng-container matColumnDef="name">
+                <mat-header-cell mat-header-cell *matHeaderCellDef mat-sort-header> Nombre </mat-header-cell>
+                <mat-cell mat-cell *matCellDef="let row"> {{row.username}} </mat-cell>
+                <mat-footer-cell *matFooterCellDef></mat-footer-cell>
+            </ng-container>
+
+            <!-- Grade Column -->
+            <ng-container matColumnDef="grade">
+                <mat-header-cell mat-header-cell *matHeaderCellDef mat-sort-header> Grado </mat-header-cell>
+                <mat-cell *matCellDef="let row"> {{row.grade}} </mat-cell>
+                <mat-footer-cell *matFooterCellDef></mat-footer-cell>
+            </ng-container>
+
+            <!-- Group Column -->
+            <ng-container matColumnDef="group">
+                <mat-header-cell mat-header-cell *matHeaderCellDef mat-sort-header> Grupo </mat-header-cell>
+                <mat-cell *matCellDef="let row"> {{row.group}} </mat-cell>
+                <mat-footer-cell *matFooterCellDef></mat-footer-cell>
+            </ng-container>
+
+
+            <!-- Set Score Column -->
+            <ng-container matColumnDef="calificar">
+                <mat-header-cell mat-header-cell *matHeaderCellDef mat-sort-header> </mat-header-cell>
+                <mat-cell *matCellDef="let row"> <button mat-raised-button class="btn btn-info" (click)="setScores(row)" *ngIf="materiaSelected"> Calificar</button> </mat-cell>
+                <mat-footer-cell *matFooterCellDef></mat-footer-cell>
+            </ng-container>
+
+            <mat-header-row *matHeaderRowDef="displayedColumns; sticky: true"></mat-header-row>
+            <mat-row *matRowDef="let row; columns: displayedColumns;">
+            </mat-row>
+
+            <mat-footer-row mat-footer-row *matFooterRowDef="displayedColumns; sticky: true" class="example-first-footer-row"></mat-footer-row>
+        </mat-table>
+
+        <mat-paginator [pageSizeOptions]="[5, 10, 25, 100]"></mat-paginator>
+    </div>
+    <!-- /tabla de alumnos -->
+
+    <!--para regresar al menu principal-->
+    <div id="boxR">
+        <button class="btn-return" (click)="menuP()">
+        <i class="material-icons">
+            navigate_before
+        </i>       
+    </button>
+    </div>
+
+</div>

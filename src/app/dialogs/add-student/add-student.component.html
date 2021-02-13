@@ -1,0 +1,84 @@
+<!--para añadir un estudiante-->
+<form [formGroup]="formStudent">
+
+    <mat-form-field style="font-size: 14px;">
+        <mat-label>Grado</mat-label>
+        <mat-select formControlName="grade">
+            <mat-option *ngFor="let grade of grades" [value]="grade.value">
+                {{grade.viewValue}}
+            </mat-option>
+        </mat-select>
+    </mat-form-field>
+
+    <mat-form-field style=" font-size: 14px; ">
+        <mat-label>Grupo</mat-label>
+        <mat-select formControlName="group">
+            <mat-option *ngFor="let group of groups" [value]="group.value">
+                {{group.viewValue}}
+            </mat-option>
+        </mat-select>
+    </mat-form-field>
+
+    <mat-form-field>
+        <input matInput (keyup)="applyFilter($event.target.value)" placeholder="Filter">
+    </mat-form-field>
+    <br>
+
+    <div class="example-container mat-elevation-z8">
+
+        <mat-table [dataSource]="dataSource" matSort>
+            <ng-container matColumnDef="select">
+                <mat-header-cell *matHeaderCellDef>
+                    <mat-checkbox (change)="$event ? masterToggle() : null" [checked]="selection.hasValue() && isAllSelected()" [indeterminate]="selection.hasValue() && !isAllSelected()">
+                    </mat-checkbox>
+                </mat-header-cell>
+                <mat-cell *matCellDef="let row">
+                    <mat-checkbox (click)="$event.stopPropagation()" (change)="$event ? selection.toggle(row) : null" [checked]="selection.isSelected(row)">
+                    </mat-checkbox>
+                </mat-cell>
+                <mat-footer-cell *matFooterCellDef></mat-footer-cell>
+
+            </ng-container>
+
+
+            <!-- <span *ngIf="row.type == 'Alumno'"> -->
+            <!-- ID Column -->
+            <ng-container matColumnDef="id">
+                <mat-header-cell *matHeaderCellDef mat-sort-header> ID </mat-header-cell>
+                <mat-cell *matCellDef="let row"> {{row.id}} </mat-cell>
+            </ng-container>
+
+            <!-- Progress Column -->
+            <ng-container matColumnDef="name">
+                <mat-header-cell *matHeaderCellDef mat-sort-header> Nombre </mat-header-cell>
+                <mat-cell *matCellDef="let row"> {{row.username}} </mat-cell>
+            </ng-container>
+
+            <!-- Name Column -->
+            <ng-container matColumnDef="grade">
+                <mat-header-cell *matHeaderCellDef mat-sort-header> Grado </mat-header-cell>
+                <mat-cell *matCellDef="let row"> {{row.grade}} </mat-cell>
+            </ng-container>
+
+            <!-- Color Column -->
+            <ng-container matColumnDef="group">
+                <mat-header-cell *matHeaderCellDef mat-sort-header> Grupo </mat-header-cell>
+                <mat-cell *matCellDef="let row"> {{row.group}} </mat-cell>
+            </ng-container>
+
+            <!-- Disclaimer column -->
+
+            <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+            <mat-row *matRowDef="let row; columns: displayedColumns;">
+            </mat-row>
+
+            <!-- </span> -->
+
+        </mat-table>
+
+        <mat-paginator [pageSizeOptions]="[5, 10, 25, 100]"></mat-paginator>
+    </div>
+    <mat-dialog-actions>
+        <button mat-button type="submit" [disabled]="formStudent.invalid" [mat-dialog-close]="check()">Añadir estudiante</button>
+    </mat-dialog-actions>
+</form>

@@ -1,0 +1,58 @@
+<div class="image_background centrado">
+
+    <app-header></app-header>
+    <h1 *ngIf="typeMenu=='Profesor' && status!=true" class="title_menu_profesor">Bienvenido profesor {{name}}</h1>
+    <h1 *ngIf="typeMenu=='Alumno' && status!=true" class="title_menu_profesor">Bienvenido alumno {{name}}</h1>
+    <h1 *ngIf="typeMenu=='Administrador' && status!=true" class="title_menu_profesor">Bienvenido Administrador {{name}}</h1>
+    <h2 *ngIf="status!=true">Espera a que tu cuenta sea activada por el administrador</h2>
+
+    <h1 *ngIf="typeMenu=='Profesor' && status==true" class="title_menu_profesor">Hola {{name}}</h1>
+    <h1 *ngIf="typeMenu=='Alumno' && status==true" class="title_menu_profesor">Hola {{name}}</h1>
+    <h1 *ngIf="typeMenu=='Administrador' && status==true" class="title_menu_profesor">Hola {{name}}</h1>
+    <div class="background_menu">
+
+        <!-- Boton para ver archivos -->
+        <div *ngIf="(typeMenu=='Profesor' || typeMenu== 'Alumno') && status==true" class=" horizontal" style="margin-left: 4%;">
+            <img src="../assets/pictures/archivos.jpg">
+            <button class="button_menu_profesor" type="submit" (click)="goToGeneralFiles()" mat-button>Archivos</button>
+        </div>
+        <!-- /Boton para ver archivos -->
+
+        <!-- Boton para entrar al chatbot -->
+
+        <div *ngIf="(typeMenu=='Profesor' || typeMenu== 'Alumno') && status==true" class="horizontal">
+            <img src="../assets/pictures/chatbot.jpg">
+            <button class="button_menu_profesor" type="submit" (click)="goToChatbot()" mat-button>Chatbot</button>
+        </div>
+        <!-- /Boton para entrar al chatbot -->
+
+        <!-- Boton para ver alumnos desde el profesor-->
+        <div *ngIf="typeMenu=='Profesor' && status==true" class="horizontal">
+            <img src="../assets/pictures/alumnos.jpg">
+            <button class="button_menu_profesor" type="submit" (click)="goToScoresUsers()" mat-button>Registro de Calificaciones</button>
+        </div>
+        <!-- /Boton para ver alumnos desde el profesor-->
+
+        <!-- Boton para ver alumnos como administrador-->
+        <div *ngIf="typeMenu=='Administrador' && status==true" class="horizontal">
+            <img src="../assets/pictures/alumnos.jpg">
+            <button class="button_menu_profesor" type="submit" (click)="goToValidateUsers()" mat-button>Usuarios</button>
+        </div>
+        <!-- Boton para ver alumnos como administrador-->
+
+        <!-- Boton para ver materias-->
+        <div *ngIf="typeMenu=='Administrador' && status==true" class="horizontal">
+            <img src="../assets/pictures/archivos.jpg">
+            <button class="button_menu_profesor" type="submit" (click)="goToMaterias()" mat-button>Materias</button>
+        </div>
+        <!-- /Boton para ver materias-->
+
+        <!-- Boton para ver alumnos como administrador-->
+        <div *ngIf="typeMenu=='Administrador' && status==true" class="horizontal">
+            <img src="../assets/pictures/recordatorios.jpg">
+            <button class="button_menu_profesor" type="submit" (click)="goToRecordatorios()" mat-button>Recordatorios generales</button>
+        </div>
+        <!-- Boton para ver alumnos como administrador-->
+
+    </div>
+</div>

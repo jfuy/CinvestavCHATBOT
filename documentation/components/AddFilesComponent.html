@@ -1,0 +1,975 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>chatbot documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">chatbot documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li>AddFilesComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/dialogs/add-files/add-files.component.ts</code>
+</p>
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-add-files</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./add-files.component.css</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./add-files.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#data">data</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#dialogRef">dialogRef</a>
+                            </li>
+                            <li>
+                                <a href="#enviado">enviado</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#firebase">firebase</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#formBuilder">formBuilder</a>
+                            </li>
+                            <li>
+                                <a href="#formFile">formFile</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#message">message</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#ngOnInit">ngOnInit</a>
+                            </li>
+                            <li>
+                                <a href="#onClickNo">onClickNo</a>
+                            </li>
+                            <li>
+                                <a href="#sendFile">sendFile</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(formBuilder: <a href="https://angular.io/api/forms/FormBuilder" target="_blank">FormBuilder</a>, dialogRef: <a href="../classes/File.html">MatDialogRef<AddFilesComponent></a>, firebase: <a href="../injectables/FirebaseService.html">FirebaseService</a>, message: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="38" class="link-to-prism">src/app/dialogs/add-files/add-files.component.ts:38</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                                    <td>Description</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>formBuilder</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/forms/FormBuilder" target="_blank" >FormBuilder</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                        <td>
+                                                                <code><p>Contructor base de un form</p>
+</code>
+                                                        </td>
+                                                </tr>
+                                                <tr>
+                                                        <td>dialogRef</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../classes/File.html" target="_self" >MatDialogRef&lt;AddFilesComponent&gt;</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                        <td>
+                                                                <code><p>variable para hacer la referencia al dialogo </p>
+</code>
+                                                        </td>
+                                                </tr>
+                                                <tr>
+                                                        <td>firebase</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/FirebaseService.html" target="_self" >FirebaseService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                        <td>
+                                                                <code><p>variable de la conexion con firebase</p>
+</code>
+                                                        </td>
+                                                </tr>
+                                                <tr>
+                                                        <td>message</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                        <td>
+                                                                <code><p>mensaje a recibir de la ventana que invoca al dialog</p>
+</code>
+                                                        </td>
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <b>
+                            ngOnInit
+                        </b>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="69"
+                            class="link-to-prism">src/app/dialogs/add-files/add-files.component.ts:69</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="onClickNo"></a>
+                    <span class="name">
+                        <b>
+                            onClickNo
+                        </b>
+                        <a href="#onClickNo"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>onClickNo()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="66"
+                            class="link-to-prism">src/app/dialogs/add-files/add-files.component.ts:66</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Funcion para cerrar el dialog </p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="sendFile"></a>
+                    <span class="name">
+                        <b>
+                            sendFile
+                        </b>
+                        <a href="#sendFile"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>sendFile()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="75"
+                            class="link-to-prism">src/app/dialogs/add-files/add-files.component.ts:75</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Funcion para enviar el archivo</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+        <h3 id="inputs">
+            Properties
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="data"></a>
+                        <span class="name">
+                            <b>
+                            data</b>
+                            <a href="#data"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/object" target="_blank" >object</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>{
+    url:&quot;&quot;,
+    descripcion:&quot;&quot;,
+    grado:&quot;&quot;,
+    grupo: &quot;&quot;,
+    materia:&quot;Materia&quot;,
+  }</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="32" class="link-to-prism">src/app/dialogs/add-files/add-files.component.ts:32</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>Variable que tiene los datos a guardar del archivo</p>
+</div>
+                    </td>
+                </tr>
+
+                    <tr>
+                        <td class="col-md-4">
+                          <div class="io-description">
+                                  <b>Parameters :</b>
+                                  <table class="params">
+                                      <thead>
+                                          <tr>
+                                                <td>Name</td>
+                                                    <td>Description</td>
+                                          </tr>
+                                      </thead>
+                                      <tbody>
+                                                <tr>
+                                                        <td>url</td>
+                                                        <td>
+                                                                <code><p>la url de donde se ubica el archivo</p>
+</code>
+                                                        </td>
+                                                </tr>
+                                                <tr>
+                                                        <td>descripcion</td>
+                                                        <td>
+                                                                <code><p>la descripcion del archivo</p>
+</code>
+                                                        </td>
+                                                </tr>
+                                                <tr>
+                                                        <td>grado</td>
+                                                        <td>
+                                                                <code><p>el grado para los alumnos del archivo</p>
+</code>
+                                                        </td>
+                                                </tr>
+                                                <tr>
+                                                        <td>grupo</td>
+                                                        <td>
+                                                                <code><p>el grupo para los alumnos del archivo</p>
+</code>
+                                                        </td>
+                                                </tr>
+                                                <tr>
+                                                        <td>materia</td>
+                                                        <td>
+                                                                <code><p>la materia a la que pertenece el archivo</p>
+</code>
+                                                        </td>
+                                                </tr>
+                                      </tbody>
+                                  </table>
+                          </div>
+                        </td>
+                    </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="dialogRef"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            dialogRef</b>
+                            <a href="#dialogRef"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../classes/File.html" target="_self" >MatDialogRef&lt;AddFilesComponent&gt;</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="48" class="link-to-prism">src/app/dialogs/add-files/add-files.component.ts:48</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description">variable para hacer la referencia al dialogo </div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="enviado"></a>
+                        <span class="name">
+                            <b>
+                            enviado</b>
+                            <a href="#enviado"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean" target="_blank" >Boolean</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="22" class="link-to-prism">src/app/dialogs/add-files/add-files.component.ts:22</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>variable que indica si ya se envio la respuesta</p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="firebase"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            firebase</b>
+                            <a href="#firebase"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../injectables/FirebaseService.html" target="_self" >FirebaseService</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="49" class="link-to-prism">src/app/dialogs/add-files/add-files.component.ts:49</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description">variable de la conexion con firebase</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="formBuilder"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            formBuilder</b>
+                            <a href="#formBuilder"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://angular.io/api/forms/FormBuilder" target="_blank" >FormBuilder</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="47" class="link-to-prism">src/app/dialogs/add-files/add-files.component.ts:47</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description">Contructor base de un form</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="formFile"></a>
+                        <span class="name">
+                            <b>
+                            formFile</b>
+                            <a href="#formFile"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../interfaces/Group.html" target="_self" >FormGroup</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="17" class="link-to-prism">src/app/dialogs/add-files/add-files.component.ts:17</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>form con los datos del archivo</p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="message"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            message</b>
+                            <a href="#message"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <b>Decorators : </b>
+                            <br />
+                            <code>
+                                @Inject(MAT_DIALOG_DATA)<br />
+                            </code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="50" class="link-to-prism">src/app/dialogs/add-files/add-files.component.ts:50</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description">mensaje a recibir de la ventana que invoca al dialog</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit, Inject } from &#x27;@angular/core&#x27;;
+import { MatDialogRef, MAT_DIALOG_DATA } from &#x27;@angular/material&#x27;;
+import { File } from &#x27;src/app/models/File.model&#x27;;
+import { FirebaseService } from &#x27;src/app/services/firebase/firebase.service&#x27;;
+import { FormBuilder, FormGroup, Validators } from &#x27;@angular/forms&#x27;;
+
+@Component({
+  selector: &#x27;app-add-files&#x27;,
+  templateUrl: &#x27;./add-files.component.html&#x27;,
+  styleUrls: [&#x27;./add-files.component.css&#x27;]
+})
+export class AddFilesComponent implements OnInit {
+
+  /**
+   * form con los datos del archivo
+   */
+  formFile:FormGroup;
+
+  /**
+   * variable que indica si ya se envio la respuesta
+   */
+  enviado:Boolean;
+
+  /**
+   * Variable que tiene los datos a guardar del archivo
+   * @param url la url de donde se ubica el archivo
+   * @param descripcion la descripcion del archivo
+   * @param grado el grado para los alumnos del archivo
+   * @param grupo el grupo para los alumnos del archivo
+   * @param materia la materia a la que pertenece el archivo
+   */
+  data&#x3D;{
+    url:&quot;&quot;,
+    descripcion:&quot;&quot;,
+    grado:&quot;&quot;,
+    grupo: &quot;&quot;,
+    materia:&quot;Materia&quot;,
+  };
+  /**
+   * 
+   * @param formBuilder Contructor base de un form
+   * @param dialogRef variable para hacer la referencia al dialogo 
+   * @param firebase variable de la conexion con firebase
+   * @param message mensaje a recibir de la ventana que invoca al dialog
+   */
+  constructor(
+    public formBuilder: FormBuilder,
+    public dialogRef : MatDialogRef&lt;AddFilesComponent&gt;,
+    public firebase: FirebaseService,
+    @Inject(MAT_DIALOG_DATA) public message:string
+  ) { 
+    this.formFile &#x3D; this.formBuilder.group({
+      url:[&#x27;&#x27;, [Validators.required]],
+      descripcion:[&#x27;&#x27;, [Validators.required]],
+      grado:[&#x27;&#x27;, [Validators.required]],
+      grupo: [&#x27;&#x27;, [Validators.required]],
+      materia:[&#x27;Materia&#x27;, [Validators.required]],
+
+    });
+
+  }
+
+  /**
+   * Funcion para cerrar el dialog 
+   */
+  onClickNo():void{
+    this.dialogRef.close()
+  }
+  ngOnInit() {
+  }
+
+  /**
+   * Funcion para enviar el archivo
+   */
+  sendFile(){
+    this.data&#x3D;this.formFile.value;
+    let response:Boolean &#x3D; this.firebase.addFiles(this.data);
+    
+  }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;form [formGroup]&#x3D;&quot;formFile&quot;&gt;
+
+    &lt;div mat-dialog-content&gt;
+        &lt;mat-form-field&gt;
+            &lt;input matInput formControlName&#x3D;&quot;url&quot; placeholder&#x3D;&quot;¿Cual es la URL?&quot;&gt;
+            &lt;!--[(ngModel)]&#x3D;&quot;data.url&quot; [(value)]&#x3D;&quot;data.materia&quot;--&gt;
+        &lt;/mat-form-field&gt;
+        &lt;p&gt;&lt;/p&gt;
+        &lt;mat-form-field&gt;
+            &lt;mat-label&gt;Materia&lt;/mat-label&gt;
+            &lt;mat-select formControlName&#x3D;&quot;materia&quot;&gt;
+                &lt;mat-option value&#x3D;&quot;Matematicas&quot;&gt;Matematicas&lt;/mat-option&gt;
+                &lt;mat-option value&#x3D;&quot;Historia&quot;&gt;Historia&lt;/mat-option&gt;
+                &lt;mat-option value&#x3D;&quot;Español&quot;&gt;Español&lt;/mat-option&gt;
+            &lt;/mat-select&gt;
+        &lt;/mat-form-field&gt;
+        &lt;p&gt;&lt;/p&gt;
+        &lt;mat-form-field&gt;
+            &lt;mat-label&gt;Grado&lt;/mat-label&gt;
+            &lt;mat-select formControlName&#x3D;&quot;grado&quot;&gt;
+                &lt;mat-option value&#x3D;&quot;1°&quot;&gt;1°&lt;/mat-option&gt;
+                &lt;mat-option value&#x3D;&quot;2°&quot;&gt;2°&lt;/mat-option&gt;
+                &lt;mat-option value&#x3D;&quot;3°&quot;&gt;3°&lt;/mat-option&gt;
+                &lt;mat-option value&#x3D;&quot;4°&quot;&gt;4°&lt;/mat-option&gt;
+                &lt;mat-option value&#x3D;&quot;5°&quot;&gt;5°&lt;/mat-option&gt;
+                &lt;mat-option value&#x3D;&quot;6°&quot;&gt;6°&lt;/mat-option&gt;
+            &lt;/mat-select&gt;
+        &lt;/mat-form-field&gt;
+        &lt;mat-form-field&gt;
+            &lt;mat-label&gt;Grupo&lt;/mat-label&gt;
+            &lt;mat-select formControlName&#x3D;&quot;grupo&quot;&gt;
+                &lt;mat-option value&#x3D;&quot;A&quot;&gt;A&lt;/mat-option&gt;
+                &lt;mat-option value&#x3D;&quot;B&quot;&gt;B&lt;/mat-option&gt;
+                &lt;mat-option value&#x3D;&quot;C&quot;&gt;C&lt;/mat-option&gt;
+                &lt;mat-option value&#x3D;&quot;D&quot;&gt;D&lt;/mat-option&gt;
+                &lt;mat-option value&#x3D;&quot;E&quot;&gt;E&lt;/mat-option&gt;
+                &lt;mat-option value&#x3D;&quot;F&quot;&gt;F&lt;/mat-option&gt;
+            &lt;/mat-select&gt;
+        &lt;/mat-form-field&gt;
+        &lt;p&gt;&lt;/p&gt;
+        &lt;mat-form-field&gt;
+            &lt;input matInput formControlName&#x3D;&quot;descripcion&quot; placeholder&#x3D;&quot;Añade una descripcion&quot;&gt;
+        &lt;/mat-form-field&gt;
+
+    &lt;/div&gt;
+    &lt;div mat-dialog-actions&gt;
+        &lt;button mat-button (click)&#x3D;&quot;onClickNo()&quot;&gt;No&lt;/button&gt;
+        &lt;button mat-button type&#x3D;&quot;submit&quot; [disabled]&#x3D;&quot;formFile.invalid&quot; [mat-dialog-close]&#x3D;&quot;formFile.value&quot; (click)&#x3D;&quot;sendFile()&quot;&gt;Si&lt;/button&gt;
+    &lt;/div&gt;
+
+&lt;/form&gt;</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./add-files.component.css</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss"></code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><form [formGroup]="formFile">    <div mat-dialog-content>        <mat-form-field>            <input matInput formControlName="url" placeholder="¿Cual es la URL?">            <!--[(ngModel)]="data.url" [(value)]="data.materia"-->        </mat-form-field>        <p></p>        <mat-form-field>            <mat-label>Materia</mat-label>            <mat-select formControlName="materia">                <mat-option value="Matematicas">Matematicas</mat-option>                <mat-option value="Historia">Historia</mat-option>                <mat-option value="Español">Español</mat-option>            </mat-select>        </mat-form-field>        <p></p>        <mat-form-field>            <mat-label>Grado</mat-label>            <mat-select formControlName="grado">                <mat-option value="1°">1°</mat-option>                <mat-option value="2°">2°</mat-option>                <mat-option value="3°">3°</mat-option>                <mat-option value="4°">4°</mat-option>                <mat-option value="5°">5°</mat-option>                <mat-option value="6°">6°</mat-option>            </mat-select>        </mat-form-field>        <mat-form-field>            <mat-label>Grupo</mat-label>            <mat-select formControlName="grupo">                <mat-option value="A">A</mat-option>                <mat-option value="B">B</mat-option>                <mat-option value="C">C</mat-option>                <mat-option value="D">D</mat-option>                <mat-option value="E">E</mat-option>                <mat-option value="F">F</mat-option>            </mat-select>        </mat-form-field>        <p></p>        <mat-form-field>            <input matInput formControlName="descripcion" placeholder="Añade una descripcion">        </mat-form-field>    </div>    <div mat-dialog-actions>        <button mat-button (click)="onClickNo()">No</button>        <button mat-button type="submit" [disabled]="formFile.invalid" [mat-dialog-close]="formFile.value" (click)="sendFile()">Si</button>    </div></form></div>'
+    var COMPONENTS = [{'name': 'AbcComponent', 'selector': 'app-abc'},{'name': 'AddFilesComponent', 'selector': 'app-add-files'},{'name': 'AddStudentComponent', 'selector': 'app-add-student'},{'name': 'AddSubjectComponent', 'selector': 'app-add-subject'},{'name': 'AlertComponent', 'selector': 'app-alert'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'ChatbotComponent', 'selector': 'app-chatbot'},{'name': 'HeaderComponent', 'selector': 'app-header'},{'name': 'LessonsComponent', 'selector': 'app-lessons'},{'name': 'LoginComponent', 'selector': 'app-login'},{'name': 'MenuComponent', 'selector': 'app-menu'},{'name': 'RegisterComponent', 'selector': 'app-register'},{'name': 'UsersLessonsComponent', 'selector': 'app-users-lessons'},{'name': 'ValidateUsersComponent', 'selector': 'app-validate-users'},{'name': 'XyzComponent', 'selector': 'app-xyz'}];
+    var DIRECTIVES = [];
+    var ACTUAL_COMPONENT = {'name': 'AddFilesComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+                   
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'AddFilesComponent.html';
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="../js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="../js/menu-wc.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

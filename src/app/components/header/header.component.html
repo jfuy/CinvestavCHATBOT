@@ -1,0 +1,16 @@
+<!--nav bar -->
+<mat-toolbar class="toolbar">
+    <mat-toolbar-row>
+        <!--Menu de cabecera -->
+        <span id="tituloHeader" (click)="principal()">ChatBot</span>
+        <span class="example-fill-remaining-space"></span>
+        <span class="align-center"></span>
+        <span class="example-spacer"></span>
+        <button *ngIf="!existUser" (click)="login()" class="opcionMenu" mat-button>Iniciar sesión</button>
+        <button *ngIf="!existUser" (click)="register()" class="opcionMenu" mat-button>Registrarse</button>
+        <button *ngIf="existUser" (click)="exitAcount()" class="opcionMenu" mat-button>Cerrar sesión</button>
+        <div class="logoCinvestav">
+        </div>
+
+    </mat-toolbar-row>
+</mat-toolbar>

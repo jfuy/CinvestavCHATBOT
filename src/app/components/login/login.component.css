@@ -1,0 +1,116 @@
+.image_background {
+    position: absolute !important;
+    top: 0px !important;
+    bottom: 0px !important;
+    width: 100vw !important;
+    height: 100vh !important;
+    padding: 0px !important;
+    /* max-width: 100vw;
+    max-height: 100vh; */
+    background-image: url('/assets/pictures/paper.jpg');
+    background-size: cover;
+    background-position: center;
+    overflow: auto;
+}
+
+.background_login {
+    width: 605px;
+    max-width: 605px;
+    margin-top: 2%;
+    height: auto;
+    position: absolute;
+    top: 15%;
+    margin-left: 35%;
+    font-size: 18px;
+    background-color: rgb(37, 62, 118, .35)
+}
+
+.input_login {
+    text-indent: 7px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 30px;
+    margin-bottom: 45px;
+    background-color: #47649D;
+    color: white;
+    max-width: 505px;
+    width: 70%;
+    height: 70px;
+    max-height: 100px;
+    z-index: 1;
+    /* border: .1px; */
+    border-width: 1px;
+    text-align: center;
+    border-color: #e4dede;
+}
+
+.input_login::placeholder {
+    color: rgb(221, 215, 215);
+    text-align: center;
+}
+
+.centrado {
+    text-align: center;
+}
+
+.circulo_login {
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url('/assets/pictures/avatar1.png');
+    width: 125px;
+    height: 120px;
+    border-radius: 100%;
+    margin-bottom: 45px;
+    margin-top: 15px;
+}
+
+#principal-box {
+    border-radius: 10%;
+}
+
+.button_login {
+    background-color: #47649D;
+    color: white;
+    border-color: #707070;
+    max-height: 100px;
+    z-index: 1;
+    height: 60px;
+    width: 250px;
+    font-size: 20px;
+    border-radius: 30px;
+}
+
+.button_nocss {
+    background: none;
+    border: 0;
+    color: inherit;
+    /* cursor: default; */
+    font: inherit;
+    line-height: normal;
+    overflow: visible;
+    padding: 0;
+    -webkit-user-select: none;
+    /* for button */
+    -webkit-appearance: button;
+    /* for input */
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus {
+    border-color: #707070 !important;
+    background-color: #47649D !important;
+    /* background-color: #FAFFBD !important; */
+}
+
+@media screen and (max-width: 505px) {
+    .background_login,
+    .input_login {
+        top: 10%;
+        width: 100%;
+        margin-top: 0;
+        text-align: center;
+    }
+}

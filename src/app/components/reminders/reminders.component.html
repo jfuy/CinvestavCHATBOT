@@ -1,0 +1,71 @@
+<div class="image_background centrado">
+
+    <app-header></app-header>
+
+    <br><br>
+    <h2 class="title">AVISOS:</h2>
+
+    <!--MOSTRAR AVISOS REGISTRADOS-->
+
+    <div class="example-container" id="tableUsers">
+        <table mat-table [dataSource]="dataSource" matSort>
+
+            <!-- ID Column -->
+            <ng-container matColumnDef="idKey">
+                <th mat-header-cell *matHeaderCellDef mat-sort-header hidden><strong>Clave</strong> </th>
+                <td mat-cell *matCellDef="let row" hidden> {{row.idKey}} </td>
+            </ng-container>
+
+
+
+            <ng-container matColumnDef="reminder">
+                <th mat-header-cell *matHeaderCellDef mat-sort-header class="headerTab"><strong>Aviso</strong> </th>
+                <td mat-cell *matCellDef="let row"> {{row.reminder}} </td>
+            </ng-container>
+
+            <!-- Progress Column -->
+            <ng-container matColumnDef="publication">
+                <th mat-header-cell *matHeaderCellDef mat-sort-header class="headerTab"> <strong>Fecha de Publicación</strong></th>
+                <td mat-cell *matCellDef="let row"> {{row.publication}} </td>
+            </ng-container>
+
+            <!-- ID Column -->
+            <ng-container matColumnDef="delet">
+                <th mat-header-cell *matHeaderCellDef mat-sort-header class="headerTab"><strong> Activado </strong></th>
+                <td mat-cell *matCellDef="let row">
+                    <p *ngIf="row.delet==0"><button mat-flat-button style="background-color: 
+                        #4CAF50; color: white; " (click)="changeActivated(true,row)">Activar</button></p>
+                    <p *ngIf="row.delet==1"><button mat-flat-button color="warn" (click)="changeActivated(false,row)">Desactivar</button></p>
+                </td>
+            </ng-container>
+
+
+            <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+            <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+        </table>
+
+        <mat-paginator [pageSizeOptions]="[5, 10, 25, 100]"></mat-paginator>
+    </div>
+    <!--MOSTRAR AVISOS REGISTRADOS-->
+
+
+
+    <!--AGREGAR NUEVOS AVISOS-->
+    <br><br>
+    <textarea ng-model="myTextArea" [(ngModel)]="textAreaReminder" id="textAreaReminder" placeholder="Ingresa el aviso a registrar"></textarea>
+
+    <br><br>
+    <button class="btn btn-info centrado" (click)="registerReminder()">Registrar Aviso</button>
+    <!-- <button class="btn btn-info centrado" (click)="openSnackBar('Mensaje a poner','X')">NOTI</button> -->
+    <!-- <button class="btn btn-info centrado" (click)="openCustomerSnackBar()">MOSTRAR</button> -->
+    <!--AGREGAR NUEVOS AVISOS-->
+
+    <div id="boxR">
+        <button class="btn-return" (click)="menuP()">
+        <i class="material-icons">
+            navigate_before
+        </i>       
+    </button>
+    </div>
+
+</div>

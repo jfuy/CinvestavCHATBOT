@@ -1,0 +1,108 @@
+table {
+    width: 80%;
+    height: 100%;
+    max-height: 400px;
+    margin-left: 19.8%;
+    text-align: center;
+}
+
+.example-container {
+    overflow: auto;
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex;
+    flex-direction: column;
+}
+
+.mat-form-field {
+    font-size: 14px;
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+    font-size: 20px;
+    color: #000000;
+}
+
+.headerTab {
+    text-align: center;
+}
+
+mat-form-field {
+    text-align: center;
+}
+
+.mat-paginator {
+    font-size: 14px;
+    width: 80%;
+    margin-left: 19.8%;
+}
+
+td,
+th {
+    width: 5%;
+}
+
+.image_background {
+    position: absolute !important;
+    top: 0px !important;
+    bottom: 0px !important;
+    width: 100vw !important;
+    height: 100vh !important;
+    padding: 0px !important;
+    max-width: 100vw;
+    max-height: 100vh;
+    background-image: url('/assets/pictures/paper.jpg');
+    background-size: cover;
+    background-position: center;
+    overflow: auto;
+}
+
+.title {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Segoe UI";
+    color: black;
+    font-size: 40px;
+}
+
+#tableUsers {
+    width: 70%;
+    text-align: center;
+}
+
+#textAreaReminder {
+    width: 60%;
+    height: 15%;
+    border-radius: 10px;
+    background: #ffffffb0;
+    font-size: 18px;
+    margin-left: 21.8%;
+}
+
+.btn {
+    font-size: medium;
+    background: #1D2B46;
+    color: white;
+    margin-left: 46.6%;
+}
+
+.btn:hover {
+    background: #0d5d92;
+    color: white;
+}
+
+.btn-return {
+    top: 45%;
+    background: rgba(51, 51, 51, 0.7);
+    color: rgba(214, 226, 236, 0.932);
+    border-top-right-radius: 45%;
+    border-bottom-right-radius: 45%;
+    width: 90px;
+    height: 80px;
+    transform: translate(-5%, -420%);
+}
+
+.btn-return .material-icons {
+    font-size: 60px;
+    /* background: #00ff4ce3; */
+}

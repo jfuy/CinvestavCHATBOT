@@ -1,0 +1,1487 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>chatbot documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">chatbot documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li>AddStudentComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/dialogs/add-student/add-student.component.ts</code>
+</p>
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-add-student</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./add-student.component.css</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./add-student.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#arrayStudents">arrayStudents</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#data">data</a>
+                            </li>
+                            <li>
+                                <a href="#dataSource">dataSource</a>
+                            </li>
+                            <li>
+                                <a href="#displayedColumns">displayedColumns</a>
+                            </li>
+                            <li>
+                                <a href="#estudiantes">estudiantes</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#formBuilder">formBuilder</a>
+                            </li>
+                            <li>
+                                <a href="#formStudent">formStudent</a>
+                            </li>
+                            <li>
+                                <a href="#grades">grades</a>
+                            </li>
+                            <li>
+                                <a href="#groups">groups</a>
+                            </li>
+                            <li>
+                                <a href="#paginator">paginator</a>
+                            </li>
+                            <li>
+                                <a href="#selection">selection</a>
+                            </li>
+                            <li>
+                                <a href="#sort">sort</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#applyFilter">applyFilter</a>
+                            </li>
+                            <li>
+                                <a href="#check">check</a>
+                            </li>
+                            <li>
+                                <a href="#isAllSelected">isAllSelected</a>
+                            </li>
+                            <li>
+                                <a href="#masterToggle">masterToggle</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit">ngOnInit</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#removeSelectedRows">removeSelectedRows</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(api: <a href="../injectables/APIService.html">APIService</a>, formBuilder: <a href="https://angular.io/api/forms/FormBuilder" target="_blank">FormBuilder</a>, data: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="72" class="link-to-prism">src/app/dialogs/add-student/add-student.component.ts:72</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                                    <td>Description</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>api</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/APIService.html" target="_self" >APIService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                        <td>
+                                                                <code><p>Conexion a la base de datos</p>
+</code>
+                                                        </td>
+                                                </tr>
+                                                <tr>
+                                                        <td>formBuilder</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/forms/FormBuilder" target="_blank" >FormBuilder</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                        <td>
+                                                                <code><p>Constructor clasico de un form </p>
+</code>
+                                                        </td>
+                                                </tr>
+                                                <tr>
+                                                        <td>data</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                        <td>
+                                                                <code><p>informacion que viene del que invoco al dialog </p>
+</code>
+                                                        </td>
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="applyFilter"></a>
+                    <span class="name">
+                        <b>
+                            applyFilter
+                        </b>
+                        <a href="#applyFilter"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>applyFilter(filterValue: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="124"
+                            class="link-to-prism">src/app/dialogs/add-student/add-student.component.ts:124</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Funcion para bucar un valor en la tabla </p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>filterValue</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>Valor a filtrar en la busqueda</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="check"></a>
+                    <span class="name">
+                        <b>
+                            check
+                        </b>
+                        <a href="#check"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>check()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="132"
+                            class="link-to-prism">src/app/dialogs/add-student/add-student.component.ts:132</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="isAllSelected"></a>
+                    <span class="name">
+                        <b>
+                            isAllSelected
+                        </b>
+                        <a href="#isAllSelected"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>isAllSelected()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="140"
+                            class="link-to-prism">src/app/dialogs/add-student/add-student.component.ts:140</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Función que compureba si todo ha sido seleccionado en una pagina</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="masterToggle"></a>
+                    <span class="name">
+                        <b>
+                            masterToggle
+                        </b>
+                        <a href="#masterToggle"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>masterToggle()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="149"
+                            class="link-to-prism">src/app/dialogs/add-student/add-student.component.ts:149</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Función para seleccionar</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <b>
+                            ngOnInit
+                        </b>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="92"
+                            class="link-to-prism">src/app/dialogs/add-student/add-student.component.ts:92</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="removeSelectedRows"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Async</span>
+                            removeSelectedRows
+                        </b>
+                        <a href="#removeSelectedRows"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>removeSelectedRows()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="157"
+                            class="link-to-prism">src/app/dialogs/add-student/add-student.component.ts:157</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Funcion para remover las filas seleccionadas</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+        <h3 id="inputs">
+            Properties
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="arrayStudents"></a>
+                        <span class="name">
+                            <b>
+                            arrayStudents</b>
+                            <a href="#arrayStudents"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../classes/User.html" target="_self" >Array&lt;User&gt;</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="24" class="link-to-prism">src/app/dialogs/add-student/add-student.component.ts:24</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>Arreglo de estudiantes</p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="data"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            data</b>
+                            <a href="#data"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <b>Decorators : </b>
+                            <br />
+                            <code>
+                                @Inject(MAT_DIALOG_DATA)<br />
+                            </code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="83" class="link-to-prism">src/app/dialogs/add-student/add-student.component.ts:83</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description">informacion que viene del que invoco al dialog </div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="dataSource"></a>
+                        <span class="name">
+                            <b>
+                            dataSource</b>
+                            <a href="#dataSource"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../classes/User.html" target="_self" >MatTableDataSource&lt;User&gt;</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="41" class="link-to-prism">src/app/dialogs/add-student/add-student.component.ts:41</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>tabla con los datos de los estudiantes</p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="displayedColumns"></a>
+                        <span class="name">
+                            <b>
+                            displayedColumns</b>
+                            <a href="#displayedColumns"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>string[]</code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>[&#x27;select&#x27;,&#x27;id&#x27;, &#x27;name&#x27;,&#x27;grade&#x27;, &#x27;group&#x27;]</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="36" class="link-to-prism">src/app/dialogs/add-student/add-student.component.ts:36</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>columnas de la tabla</p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="estudiantes"></a>
+                        <span class="name">
+                            <b>
+                            estudiantes</b>
+                            <a href="#estudiantes"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean" target="_blank" >Boolean</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>false</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="29" class="link-to-prism">src/app/dialogs/add-student/add-student.component.ts:29</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>variable que indica si ya se busco un estudiante </p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="formBuilder"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            formBuilder</b>
+                            <a href="#formBuilder"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://angular.io/api/forms/FormBuilder" target="_blank" >FormBuilder</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="82" class="link-to-prism">src/app/dialogs/add-student/add-student.component.ts:82</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description">Constructor clasico de un form </div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="formStudent"></a>
+                        <span class="name">
+                            <b>
+                            formStudent</b>
+                            <a href="#formStudent"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../interfaces/Group.html" target="_self" >FormGroup</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="18" class="link-to-prism">src/app/dialogs/add-student/add-student.component.ts:18</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="grades"></a>
+                        <span class="name">
+                            <b>
+                            grades</b>
+                            <a href="#grades"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../interfaces/Grade.html" target="_self" >Grade[]</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>[
+    {value: &#x27;1&#x27;, viewValue:&quot;1°&quot;},
+    {value: &#x27;2&#x27;, viewValue:&quot;2°&quot;},
+    {value: &#x27;3&#x27;, viewValue:&quot;3°&quot;},
+    {value: &#x27;4&#x27;, viewValue:&quot;4°&quot;},
+    {value: &#x27;5&#x27;, viewValue:&quot;5°&quot;},
+    {value: &#x27;6&#x27;, viewValue:&quot;6°&quot;}
+  ]</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="50" class="link-to-prism">src/app/dialogs/add-student/add-student.component.ts:50</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>Propiedad que sirve para tener los grados de los alumnos</p>
+</div>
+                    </td>
+                </tr>
+
+                    <tr>
+                        <td class="col-md-4">
+                          <div class="io-description">
+                                  <b>Parameters :</b>
+                                  <table class="params">
+                                      <thead>
+                                          <tr>
+                                                <td>Name</td>
+                                                    <td>Description</td>
+                                          </tr>
+                                      </thead>
+                                      <tbody>
+                                                <tr>
+                                                        <td>value</td>
+                                                        <td>
+                                                                <code><p>es el valor que tendra como tal la seleccion </p>
+</code>
+                                                        </td>
+                                                </tr>
+                                                <tr>
+                                                        <td>viewValue</td>
+                                                        <td>
+                                                                <code><p>es el valor que que se muestra para la seleccion </p>
+</code>
+                                                        </td>
+                                                </tr>
+                                      </tbody>
+                                  </table>
+                          </div>
+                        </td>
+                    </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="groups"></a>
+                        <span class="name">
+                            <b>
+                            groups</b>
+                            <a href="#groups"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../interfaces/Group.html" target="_self" >Group[]</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>[
+    {value: &#x27;A&#x27;, viewValue:&quot;A&quot;},
+    {value: &#x27;B&#x27;, viewValue:&quot;B&quot;},
+    {value: &#x27;C&#x27;, viewValue:&quot;C&quot;},
+    {value: &#x27;D&#x27;, viewValue:&quot;D&quot;},
+    {value: &#x27;E&#x27;, viewValue:&quot;E&quot;},
+    {value: &#x27;F&#x27;, viewValue:&quot;F&quot;}
+  ]</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="65" class="link-to-prism">src/app/dialogs/add-student/add-student.component.ts:65</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>Propiedad que indica el grupo al que pertenece el estudiante</p>
+</div>
+                    </td>
+                </tr>
+
+                    <tr>
+                        <td class="col-md-4">
+                          <div class="io-description">
+                                  <b>Parameters :</b>
+                                  <table class="params">
+                                      <thead>
+                                          <tr>
+                                                <td>Name</td>
+                                                    <td>Description</td>
+                                          </tr>
+                                      </thead>
+                                      <tbody>
+                                                <tr>
+                                                        <td>value</td>
+                                                        <td>
+                                                                <code><p>es el valor que tendra como tal la seleccion </p>
+</code>
+                                                        </td>
+                                                </tr>
+                                                <tr>
+                                                        <td>viewValue</td>
+                                                        <td>
+                                                                <code><p>es el valor que que se muestra para la seleccion </p>
+</code>
+                                                        </td>
+                                                </tr>
+                                      </tbody>
+                                  </table>
+                          </div>
+                        </td>
+                    </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="paginator"></a>
+                        <span class="name">
+                            <b>
+                            paginator</b>
+                            <a href="#paginator"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>MatPaginator</code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <b>Decorators : </b>
+                            <br />
+                            <code>
+                                @ViewChild(MatPaginator, {static: true})<br />
+                            </code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="31" class="link-to-prism">src/app/dialogs/add-student/add-student.component.ts:31</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="selection"></a>
+                        <span class="name">
+                            <b>
+                            selection</b>
+                            <a href="#selection"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>new SelectionModel&lt;any&gt;(true, [])</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="20" class="link-to-prism">src/app/dialogs/add-student/add-student.component.ts:20</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="sort"></a>
+                        <span class="name">
+                            <b>
+                            sort</b>
+                            <a href="#sort"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>MatSort</code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <b>Decorators : </b>
+                            <br />
+                            <code>
+                                @ViewChild(MatSort, {static: true})<br />
+                            </code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="32" class="link-to-prism">src/app/dialogs/add-student/add-student.component.ts:32</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit, ViewChild, Inject } from &#x27;@angular/core&#x27;;
+import { Grade, Group } from &#x27;src/app/components/users-lessons/users-lessons.component&#x27;;
+import { User } from &#x27;src/app/models/User.model&#x27;;
+import { MatTableDataSource, MatPaginator, MatSort, MAT_DIALOG_DATA } from &#x27;@angular/material&#x27;;
+import { APIService } from &#x27;src/app/services/api/api.service&#x27;;
+import { FormBuilder, FormGroup, Validators } from &#x27;@angular/forms&#x27;;
+import { SelectionModel } from &#x27;@angular/cdk/collections&#x27;;
+import { group } from &#x27;@angular/animations&#x27;;
+
+@Component({
+  selector: &#x27;app-add-student&#x27;,
+  templateUrl: &#x27;./add-student.component.html&#x27;,
+  styleUrls: [&#x27;./add-student.component.css&#x27;]
+})
+export class AddStudentComponent implements OnInit {
+
+
+  formStudent:FormGroup;
+
+  selection &#x3D; new SelectionModel&lt;any&gt;(true, []);
+/**
+ * Arreglo de estudiantes
+ */
+  arrayStudents: Array&lt;User&gt;;
+
+  /**
+   * variable que indica si ya se busco un estudiante 
+   */
+  estudiantes: Boolean &#x3D;false;
+  
+  @ViewChild(MatPaginator, {static: true}) paginator: MatPaginator;
+  @ViewChild(MatSort, {static: true}) sort: MatSort;
+  /**
+   * columnas de la tabla
+   */
+  displayedColumns: string[] &#x3D; [&#x27;select&#x27;,&#x27;id&#x27;, &#x27;name&#x27;,&#x27;grade&#x27;, &#x27;group&#x27;];
+  
+  /**
+   * tabla con los datos de los estudiantes
+   */
+  dataSource: MatTableDataSource&lt;User&gt;;
+ 
+
+  /**
+   *  Propiedad que sirve para tener los grados de los alumnos
+   * @param value es el valor que tendra como tal la seleccion 
+   * @param viewValue es el valor que que se muestra para la seleccion 
+   * 
+   */
+  grades:Grade[] &#x3D; [
+    {value: &#x27;1&#x27;, viewValue:&quot;1°&quot;},
+    {value: &#x27;2&#x27;, viewValue:&quot;2°&quot;},
+    {value: &#x27;3&#x27;, viewValue:&quot;3°&quot;},
+    {value: &#x27;4&#x27;, viewValue:&quot;4°&quot;},
+    {value: &#x27;5&#x27;, viewValue:&quot;5°&quot;},
+    {value: &#x27;6&#x27;, viewValue:&quot;6°&quot;}
+  ];
+
+  /**
+   * Propiedad que indica el grupo al que pertenece el estudiante
+   * @param value es el valor que tendra como tal la seleccion 
+   * @param viewValue es el valor que que se muestra para la seleccion 
+   * 
+   */
+  groups:Group[] &#x3D; [
+    {value: &#x27;A&#x27;, viewValue:&quot;A&quot;},
+    {value: &#x27;B&#x27;, viewValue:&quot;B&quot;},
+    {value: &#x27;C&#x27;, viewValue:&quot;C&quot;},
+    {value: &#x27;D&#x27;, viewValue:&quot;D&quot;},
+    {value: &#x27;E&#x27;, viewValue:&quot;E&quot;},
+    {value: &#x27;F&#x27;, viewValue:&quot;F&quot;}
+  ];
+
+  /**
+   * 
+   * @param api Conexion a la base de datos
+   * @param formBuilder Constructor clasico de un form 
+   * @param data informacion que viene del que invoco al dialog 
+   */
+  constructor(
+    private api: APIService,
+    public formBuilder: FormBuilder,
+    @Inject(MAT_DIALOG_DATA) public  data:any, 
+  ) {
+    this.formStudent &#x3D; this.formBuilder.group({
+      grade:[&#x27;&#x27;, [Validators.required]],
+      group: [&#x27;&#x27;, [Validators.required]],
+
+    });
+   }
+
+  ngOnInit() {
+    if (this.data.group) {
+      this.formStudent.get(&#x27;group&#x27;).setValue(this.data.group)
+      
+    }
+    if(this.data.grade){
+      this.formStudent.get(&#x27;grade&#x27;).setValue(this.data.grade)
+
+    }
+
+
+    if (this.formStudent.valid) {
+      
+      
+      this.api.getUsersNotLesson().subscribe(response&#x3D;&gt;{
+        this.estudiantes&#x3D;true;
+
+        this.arrayStudents&#x3D;response as Array&lt;User&gt;
+
+          this.dataSource &#x3D; new MatTableDataSource(this.arrayStudents);
+          this.dataSource.paginator &#x3D; this.paginator;
+          this.dataSource.sort &#x3D; this.sort;
+  
+      });
+    }
+
+  }
+
+  /**
+   * Funcion para bucar un valor en la tabla 
+   * @param filterValue Valor a filtrar en la busqueda
+   */
+  applyFilter(filterValue: string) {
+    this.dataSource.filter &#x3D; filterValue.trim().toLowerCase();
+
+    if (this.dataSource.paginator) {
+      this.dataSource.paginator.firstPage();
+    }
+  }
+
+  check(){
+    console.log(&quot;entre&quot;); 
+    console.log(this.formStudent.value);
+  
+  }
+  /**
+   * Función que compureba si todo ha sido seleccionado en una pagina
+   */
+  isAllSelected() {
+    const numSelected &#x3D; this.selection.selected.length;
+    const numRows &#x3D; this.dataSource.data.length;
+    return numSelected &#x3D;&#x3D;&#x3D; numRows;
+  }
+
+  /**
+   * Función para seleccionar
+   */
+  masterToggle() {
+    this.isAllSelected() ?
+      this.selection.clear() :
+      this.dataSource.data.forEach(row &#x3D;&gt; this.selection.select(row));
+  }
+  /**
+   * Funcion para remover las filas seleccionadas
+   */
+  async removeSelectedRows() {
+    this.selection.selected.forEach(item &#x3D;&gt; {
+      let index: number &#x3D; this.arrayStudents.findIndex(d &#x3D;&gt; d &#x3D;&#x3D;&#x3D; item);
+      console.log(this.arrayStudents.findIndex(d &#x3D;&gt; d &#x3D;&#x3D;&#x3D; item));
+      let temp:any &#x3D; this.arrayStudents.find(d &#x3D;&gt; d &#x3D;&#x3D;&#x3D; item)
+      console.log(temp)
+      
+      this.api.deleteLessonIdUser(temp.id_user).subscribe(response&#x3D;&gt;{
+        this.arrayStudents.splice(index,1)
+        this.dataSource &#x3D; new MatTableDataSource&lt;User&gt;(this.arrayStudents);
+      })
+
+    });
+    this.selection &#x3D; new SelectionModel&lt;User&gt;(true, []);
+  }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;form [formGroup]&#x3D;&quot;formStudent&quot;&gt;
+
+    &lt;mat-form-field style&#x3D;&quot;font-size: 14px;&quot;&gt;
+        &lt;mat-label&gt;Grado&lt;/mat-label&gt;
+        &lt;mat-select (selectionChange)&#x3D;&quot;check()&quot; formControlName&#x3D;&quot;grade&quot;&gt;
+            &lt;mat-option *ngFor&#x3D;&quot;let grade of grades&quot; [value]&#x3D;&quot;grade.value&quot;&gt;
+                {{grade.viewValue}}
+            &lt;/mat-option&gt;
+        &lt;/mat-select&gt;
+    &lt;/mat-form-field&gt;
+
+    &lt;mat-form-field style&#x3D;&quot; font-size: 14px; &quot;&gt;
+        &lt;mat-label&gt;Grupo&lt;/mat-label&gt;
+        &lt;mat-select formControlName&#x3D;&quot;group&quot;&gt;
+            &lt;mat-option *ngFor&#x3D;&quot;let group of groups&quot; [value]&#x3D;&quot;group.value&quot;&gt;
+                {{group.viewValue}}
+            &lt;/mat-option&gt;
+        &lt;/mat-select&gt;
+    &lt;/mat-form-field&gt;
+
+    &lt;mat-form-field&gt;
+        &lt;input matInput (keyup)&#x3D;&quot;applyFilter($event.target.value)&quot; placeholder&#x3D;&quot;Filter&quot;&gt;
+    &lt;/mat-form-field&gt;
+    &lt;br&gt;
+
+    &lt;div class&#x3D;&quot;example-container mat-elevation-z8&quot;&gt;
+        &lt;!-- &lt;button mat-raised-button color&#x3D;&quot;primary&quot; (click)&#x3D;&quot;removeSelectedRows()&quot;&gt;
+            Remove Selected Rows
+        &lt;/button&gt; --&gt;
+        &lt;mat-table [dataSource]&#x3D;&quot;dataSource&quot; matSort&gt;
+            &lt;ng-container matColumnDef&#x3D;&quot;select&quot;&gt;
+                &lt;mat-header-cell *matHeaderCellDef&gt;
+                    &lt;mat-checkbox (change)&#x3D;&quot;$event ? masterToggle() : null&quot; [checked]&#x3D;&quot;selection.hasValue() &amp;&amp; isAllSelected()&quot; [indeterminate]&#x3D;&quot;selection.hasValue() &amp;&amp; !isAllSelected()&quot;&gt;
+                    &lt;/mat-checkbox&gt;
+                &lt;/mat-header-cell&gt;
+                &lt;mat-cell *matCellDef&#x3D;&quot;let row&quot;&gt;
+                    &lt;mat-checkbox (click)&#x3D;&quot;$event.stopPropagation()&quot; (change)&#x3D;&quot;$event ? selection.toggle(row) : null&quot; [checked]&#x3D;&quot;selection.isSelected(row)&quot;&gt;
+                    &lt;/mat-checkbox&gt;
+                &lt;/mat-cell&gt;
+                &lt;mat-footer-cell *matFooterCellDef&gt;&lt;/mat-footer-cell&gt;
+
+            &lt;/ng-container&gt;
+
+
+            &lt;!-- ID Column --&gt;
+            &lt;ng-container matColumnDef&#x3D;&quot;id&quot;&gt;
+                &lt;mat-header-cell *matHeaderCellDef mat-sort-header&gt; ID &lt;/mat-header-cell&gt;
+                &lt;mat-cell *matCellDef&#x3D;&quot;let row&quot;&gt; {{row.id}} &lt;/mat-cell&gt;
+            &lt;/ng-container&gt;
+
+            &lt;!-- Progress Column --&gt;
+            &lt;ng-container matColumnDef&#x3D;&quot;name&quot;&gt;
+                &lt;mat-header-cell *matHeaderCellDef mat-sort-header&gt; Nombre &lt;/mat-header-cell&gt;
+                &lt;mat-cell *matCellDef&#x3D;&quot;let row&quot;&gt; {{row.username}} &lt;/mat-cell&gt;
+            &lt;/ng-container&gt;
+
+            &lt;!-- Name Column --&gt;
+            &lt;ng-container matColumnDef&#x3D;&quot;grade&quot;&gt;
+                &lt;mat-header-cell *matHeaderCellDef mat-sort-header&gt; Grado &lt;/mat-header-cell&gt;
+                &lt;mat-cell *matCellDef&#x3D;&quot;let row&quot;&gt; {{row.grade}} &lt;/mat-cell&gt;
+            &lt;/ng-container&gt;
+
+            &lt;!-- Color Column --&gt;
+            &lt;ng-container matColumnDef&#x3D;&quot;group&quot;&gt;
+                &lt;mat-header-cell *matHeaderCellDef mat-sort-header&gt; Grupo &lt;/mat-header-cell&gt;
+                &lt;mat-cell *matCellDef&#x3D;&quot;let row&quot;&gt; {{row.group}} &lt;/mat-cell&gt;
+            &lt;/ng-container&gt;
+
+            &lt;!-- Disclaimer column --&gt;
+
+
+
+            &lt;mat-header-row *matHeaderRowDef&#x3D;&quot;displayedColumns&quot;&gt;&lt;/mat-header-row&gt;
+            &lt;mat-row *matRowDef&#x3D;&quot;let row; columns: displayedColumns;&quot;&gt;
+            &lt;/mat-row&gt;
+
+
+        &lt;/mat-table&gt;
+
+        &lt;mat-paginator [pageSizeOptions]&#x3D;&quot;[5, 10, 25, 100]&quot;&gt;&lt;/mat-paginator&gt;
+    &lt;/div&gt;
+    &lt;mat-dialog-actions&gt;
+        &lt;button mat-button type&#x3D;&quot;submit&quot; [disabled]&#x3D;&quot;formStudent.invalid&quot; [mat-dialog-close]&#x3D;&quot;formStudent.value&quot; (click)&#x3D;&quot;check()&quot;&gt;Añadir estudiante&lt;/button&gt;
+    &lt;/mat-dialog-actions&gt;
+&lt;/form&gt;</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./add-student.component.css</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">table {
+    width: 100%;
+    height: 100%;
+    max-height: 400px;
+}
+
+.example-container {
+    overflow: auto;
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex;
+    flex-direction: column;
+}
+
+.mat-form-field {
+    font-size: 14px;
+    width: 50%;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.mat-paginator {
+    font-size: 14px;
+    width: 100%;
+}
+
+td,
+th {
+    width: 5%;
+}</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><form [formGroup]="formStudent">    <mat-form-field style="font-size: 14px;">        <mat-label>Grado</mat-label>        <mat-select (selectionChange)="check()" formControlName="grade">            <mat-option *ngFor="let grade of grades" [value]="grade.value">                {{grade.viewValue}}            </mat-option>        </mat-select>    </mat-form-field>    <mat-form-field style=" font-size: 14px; ">        <mat-label>Grupo</mat-label>        <mat-select formControlName="group">            <mat-option *ngFor="let group of groups" [value]="group.value">                {{group.viewValue}}            </mat-option>        </mat-select>    </mat-form-field>    <mat-form-field>        <input matInput (keyup)="applyFilter($event.target.value)" placeholder="Filter">    </mat-form-field>    <br>    <div class="example-container mat-elevation-z8">        <!-- <button mat-raised-button color="primary" (click)="removeSelectedRows()">            Remove Selected Rows        </button> -->        <mat-table [dataSource]="dataSource" matSort>            <ng-container matColumnDef="select">                <mat-header-cell *matHeaderCellDef>                    <mat-checkbox (change)="$event ? masterToggle() : null" [checked]="selection.hasValue() && isAllSelected()" [indeterminate]="selection.hasValue() && !isAllSelected()">                    </mat-checkbox>                </mat-header-cell>                <mat-cell *matCellDef="let row">                    <mat-checkbox (click)="$event.stopPropagation()" (change)="$event ? selection.toggle(row) : null" [checked]="selection.isSelected(row)">                    </mat-checkbox>                </mat-cell>                <mat-footer-cell *matFooterCellDef></mat-footer-cell>            </ng-container>            <!-- ID Column -->            <ng-container matColumnDef="id">                <mat-header-cell *matHeaderCellDef mat-sort-header> ID </mat-header-cell>                <mat-cell *matCellDef="let row"> {{row.id}} </mat-cell>            </ng-container>            <!-- Progress Column -->            <ng-container matColumnDef="name">                <mat-header-cell *matHeaderCellDef mat-sort-header> Nombre </mat-header-cell>                <mat-cell *matCellDef="let row"> {{row.username}} </mat-cell>            </ng-container>            <!-- Name Column -->            <ng-container matColumnDef="grade">                <mat-header-cell *matHeaderCellDef mat-sort-header> Grado </mat-header-cell>                <mat-cell *matCellDef="let row"> {{row.grade}} </mat-cell>            </ng-container>            <!-- Color Column -->            <ng-container matColumnDef="group">                <mat-header-cell *matHeaderCellDef mat-sort-header> Grupo </mat-header-cell>                <mat-cell *matCellDef="let row"> {{row.group}} </mat-cell>            </ng-container>            <!-- Disclaimer column -->            <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>            <mat-row *matRowDef="let row; columns: displayedColumns;">            </mat-row>        </mat-table>        <mat-paginator [pageSizeOptions]="[5, 10, 25, 100]"></mat-paginator>    </div>    <mat-dialog-actions>        <button mat-button type="submit" [disabled]="formStudent.invalid" [mat-dialog-close]="formStudent.value" (click)="check()">Añadir estudiante</button>    </mat-dialog-actions></form></div>'
+    var COMPONENTS = [{'name': 'AbcComponent', 'selector': 'app-abc'},{'name': 'AddFilesComponent', 'selector': 'app-add-files'},{'name': 'AddStudentComponent', 'selector': 'app-add-student'},{'name': 'AddSubjectComponent', 'selector': 'app-add-subject'},{'name': 'AlertComponent', 'selector': 'app-alert'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'ChatbotComponent', 'selector': 'app-chatbot'},{'name': 'HeaderComponent', 'selector': 'app-header'},{'name': 'LessonsComponent', 'selector': 'app-lessons'},{'name': 'LoginComponent', 'selector': 'app-login'},{'name': 'MenuComponent', 'selector': 'app-menu'},{'name': 'RegisterComponent', 'selector': 'app-register'},{'name': 'UsersLessonsComponent', 'selector': 'app-users-lessons'},{'name': 'ValidateUsersComponent', 'selector': 'app-validate-users'},{'name': 'XyzComponent', 'selector': 'app-xyz'}];
+    var DIRECTIVES = [];
+    var ACTUAL_COMPONENT = {'name': 'AddStudentComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+                   
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'AddStudentComponent.html';
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="../js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="../js/menu-wc.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

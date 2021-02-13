@@ -1,0 +1,184 @@
+<div class="image_background">
+
+    <app-header></app-header>
+
+    <!--Buscador-->
+    <br><br><br>
+    <h2 class="title">Gestionar Materias y Alumnos</h2>
+    <br><br>
+    <div class="row centrado">
+        <mat-toolbar-row>
+            <mat-form-field style="font-size: 14px; margin-left: 0%;">
+                <mat-label>Grado</mat-label>
+                <mat-select (selectionChange)="searchStudents()" [(ngModel)]="gradeSelected">
+                    <mat-option *ngFor="let grade of grades" [value]="grade.value">
+                        {{grade.viewValue}}
+                    </mat-option>
+                </mat-select>
+            </mat-form-field>
+
+            <mat-form-field style=" font-size: 14px; margin-right: 0%;">
+                <mat-label>Grupo</mat-label>
+                <mat-select (selectionChange)="searchStudents()" [(ngModel)]="groupSelected">
+                    <mat-option *ngFor="let group of groups" [value]="group.value">
+                        {{group.viewValue}}
+                    </mat-option>
+                </mat-select>
+            </mat-form-field>
+        </mat-toolbar-row>
+    </div>
+    <!--/Buscador-->
+
+    <br>
+    <mat-form-field>
+        <input matInput (keyup)="applyFilter($event.target.value)" placeholder="Filter">
+    </mat-form-field>
+
+
+    <br>
+    <!--Tabla de materias-->
+    <div class="row containerTables">
+        <div class="subjects">
+            <h3 style="text-align: center;">Materias</h3>
+            <mat-table class="subjectsTable" mat-table [dataSource]="dataSourceLessons" matSort>
+
+                <!-- Name Column -->
+                <ng-container matColumnDef="name">
+                    <mat-header-cell class="celdas" *matHeaderCellDef mat-sort-header> Nombre </mat-header-cell>
+                    <mat-cell class="celdas" *matCellDef="let row"> {{row.name}} </mat-cell>
+                    <mat-footer-cell *matFooterCellDef></mat-footer-cell>
+
+                </ng-container>
+
+
+                <!-- Grade Column -->
+                <ng-container matColumnDef="grade">
+                    <mat-header-cell class="celdas" *matHeaderCellDef mat-sort-header> Grado </mat-header-cell>
+                    <mat-cell class="celdas" *matCellDef="let row"> {{row.grade}} </mat-cell>
+                    <mat-footer-cell *matFooterCellDef></mat-footer-cell>
+
+                </ng-container>
+
+
+                <!-- Deleted Column -->
+                <ng-container matColumnDef="deleted">
+                    <mat-header-cell class="celdas" *matHeaderCellDef mat-sort-header> Eliminar </mat-header-cell>
+                    <mat-cell class="celdas" *matCellDef="let row"> <button mat-flat-button color="warn" (click)="deleted(row)">Desactivar</button> </mat-cell>
+                    <mat-footer-cell *matFooterCellDef></mat-footer-cell>
+
+                </ng-container>
+
+                <mat-header-row *matHeaderRowDef="displayedColumnsLessons"></mat-header-row>
+                <mat-row *matRowDef="let row; columns: displayedColumnsLessons;">
+                </mat-row>
+
+
+                <ng-container matColumnDef="disclaimer">
+                    <mat-footer-cell *matFooterCellDef colspan="2">
+                        <button *ngIf="gradeSelected" mat-raised-button (click)="addSubject()"> Añadir materia </button>
+                    </mat-footer-cell>
+                </ng-container>
+
+                <mat-footer-row *matFooterRowDef="displayedColumnsLessons; sticky: true" class="example-first-footer-row"></mat-footer-row>
+                <mat-footer-row *matFooterRowDef="['disclaimer']" class="example-second-footer-row"></mat-footer-row>
+            </mat-table>
+
+            <mat-paginator [pageSizeOptions]="[5, 10, 25, 100]"> </mat-paginator>
+        </div>
+        <!--/Tabla de materias-->
+
+
+
+        <br>
+
+
+        <!-- tabla de alumnos -->
+        <div class="example-container ">
+            <h3 style="text-align: center;">Alumnos</h3>
+            <button mat-raised-button color="primary" (click)="removeSelectedRows()">
+                        Remove Selected Rows
+                      </button>
+            <mat-table mat-table [dataSource]="dataSource" matSort style="overflow: auto; max-height: 300px;">
+
+
+                <!-- Checkbox Column -->
+                <ng-container matColumnDef="select">
+                    <mat-header-cell *matHeaderCellDef>
+                        <mat-checkbox (change)="$event ? masterToggle() : null" [checked]="selection.hasValue() && isAllSelected()" [indeterminate]="selection.hasValue() && !isAllSelected()">
+                        </mat-checkbox>
+                    </mat-header-cell>
+                    <mat-cell *matCellDef="let row">
+                        <mat-checkbox (click)="$event.stopPropagation()" (change)="$event ? selection.toggle(row) : null" [checked]="selection.isSelected(row)">
+                        </mat-checkbox>
+                    </mat-cell>
+                    <mat-footer-cell *matFooterCellDef></mat-footer-cell>
+
+                </ng-container>
+
+                <!-- ID Column -->
+                <ng-container matColumnDef="id">
+                    <mat-header-cell mat-header-cell *matHeaderCellDef mat-sort-header> ID </mat-header-cell>
+                    <mat-cell *matCellDef="let row"> {{row.id}} </mat-cell>
+                    <mat-footer-cell *matFooterCellDef></mat-footer-cell>
+                </ng-container>
+
+                <!-- Name Column -->
+                <ng-container matColumnDef="name">
+                    <mat-header-cell mat-header-cell *matHeaderCellDef mat-sort-header> Nombre </mat-header-cell>
+                    <mat-cell mat-cell *matCellDef="let row"> {{row.username | slice:0:7}} </mat-cell>
+                    <mat-footer-cell *matFooterCellDef></mat-footer-cell>
+                </ng-container>
+
+                <!-- Grade Column -->
+                <ng-container matColumnDef="grade">
+                    <mat-header-cell mat-header-cell *matHeaderCellDef mat-sort-header> Grado </mat-header-cell>
+                    <mat-cell *matCellDef="let row"> {{row.grade}} </mat-cell>
+                    <mat-footer-cell *matFooterCellDef></mat-footer-cell>
+                </ng-container>
+
+                <!-- Group Column -->
+                <ng-container matColumnDef="group">
+                    <mat-header-cell mat-header-cell *matHeaderCellDef mat-sort-header> Grupo </mat-header-cell>
+                    <mat-cell *matCellDef="let row"> {{row.group}} </mat-cell>
+                    <mat-footer-cell *matFooterCellDef></mat-footer-cell>
+                </ng-container>
+
+                <!-- Delet Column -->
+
+                <ng-container matColumnDef="delet">
+                    <mat-header-cell mat-header-cell *matHeaderCellDef mat-sort-header> Eliminar </mat-header-cell>
+                    <mat-cell *matCellDef="let row"> <button mat-raised-button color="warn" (click)="deleteStudent(row)"> Eliminar</button> </mat-cell>
+                    <mat-footer-cell *matFooterCellDef></mat-footer-cell>
+                </ng-container>
+
+                <!-- Disclaimer column -->
+                <ng-container matColumnDef="disclaimer">
+                    <mat-cell mat-footer-cell *matFooterCellDef colspan="2">
+                        <button *ngIf="gradeSelected && groupSelected" mat-raised-button (click)="addStudent()"> Añadir Alumno </button>
+                    </mat-cell>
+                </ng-container>
+
+
+                <mat-header-row *matHeaderRowDef="displayedColumns; sticky: true"></mat-header-row>
+                <mat-row *matRowDef="let row; columns: displayedColumns;">
+                </mat-row>
+
+                <mat-footer-row mat-footer-row *matFooterRowDef="displayedColumns; sticky: true" class="example-first-footer-row"></mat-footer-row>
+                <mat-footer-row *matFooterRowDef="['disclaimer']" class="example-second-footer-row"></mat-footer-row>
+            </mat-table>
+
+            <mat-paginator [pageSizeOptions]="[5, 10, 25, 100]"></mat-paginator>
+        </div>
+        <!-- /tabla de alumnos -->
+
+    </div>
+    <!--para regresar al menu principal-->
+    <div id="boxR">
+        <button class="btn-return" (click)="menuP()">
+        <i class="material-icons">
+            navigate_before
+        </i>       
+    </button>
+    </div>
+
+</div>

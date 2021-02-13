@@ -1,0 +1,2298 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>chatbot documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">chatbot documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li>UsersLessonsComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/components/users-lessons/users-lessons.component.ts</code>
+</p>
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-users-lessons</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./users-lessons.component.css</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./users-lessons.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#arrayLessons">arrayLessons</a>
+                            </li>
+                            <li>
+                                <a href="#arrayStudents">arrayStudents</a>
+                            </li>
+                            <li>
+                                <a href="#dataSource">dataSource</a>
+                            </li>
+                            <li>
+                                <a href="#dataSourceLessons">dataSourceLessons</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#dialog">dialog</a>
+                            </li>
+                            <li>
+                                <a href="#displayedColumns">displayedColumns</a>
+                            </li>
+                            <li>
+                                <a href="#displayedColumnsLessons">displayedColumnsLessons</a>
+                            </li>
+                            <li>
+                                <a href="#estudiantes">estudiantes</a>
+                            </li>
+                            <li>
+                                <a href="#grades">grades</a>
+                            </li>
+                            <li>
+                                <a href="#gradeSelected">gradeSelected</a>
+                            </li>
+                            <li>
+                                <a href="#groups">groups</a>
+                            </li>
+                            <li>
+                                <a href="#groupSelected">groupSelected</a>
+                            </li>
+                            <li>
+                                <a href="#materias">materias</a>
+                            </li>
+                            <li>
+                                <a href="#paginator">paginator</a>
+                            </li>
+                            <li>
+                                <a href="#selection">selection</a>
+                            </li>
+                            <li>
+                                <a href="#sort">sort</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#addStudent">addStudent</a>
+                            </li>
+                            <li>
+                                <a href="#addSubject">addSubject</a>
+                            </li>
+                            <li>
+                                <a href="#applyFilter">applyFilter</a>
+                            </li>
+                            <li>
+                                <a href="#applyFilterLesson">applyFilterLesson</a>
+                            </li>
+                            <li>
+                                <a href="#deleted">deleted</a>
+                            </li>
+                            <li>
+                                <a href="#deleteStudent">deleteStudent</a>
+                            </li>
+                            <li>
+                                <a href="#isAllSelected">isAllSelected</a>
+                            </li>
+                            <li>
+                                <a href="#masterToggle">masterToggle</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit">ngOnInit</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#removeSelectedRows">removeSelectedRows</a>
+                            </li>
+                            <li>
+                                <a href="#searchStudents">searchStudents</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(api: <a href="../injectables/APIService.html">APIService</a>, dialog: MatDialog)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="136" class="link-to-prism">src/app/components/users-lessons/users-lessons.component.ts:136</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div class="io-description"><p>Constructor de la clase </p>
+</div>
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                                    <td>Description</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>api</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/APIService.html" target="_self" >APIService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                        <td>
+                                                                <code><p>es la variable de la api que conecta con la base de datos</p>
+</code>
+                                                        </td>
+                                                </tr>
+                                                <tr>
+                                                        <td>dialog</td>
+                                                  
+                                                        <td>
+                                                                    <code>MatDialog</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                        <td>
+                                                                <code><p>variable para hacer llamada a un dialog externo</p>
+</code>
+                                                        </td>
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="addStudent"></a>
+                    <span class="name">
+                        <b>
+                            addStudent
+                        </b>
+                        <a href="#addStudent"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>addStudent()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="280"
+                            class="link-to-prism">src/app/components/users-lessons/users-lessons.component.ts:280</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Metodo para añadir un estudiante todavia no esta terminado</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="addSubject"></a>
+                    <span class="name">
+                        <b>
+                            addSubject
+                        </b>
+                        <a href="#addSubject"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>addSubject()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="243"
+                            class="link-to-prism">src/app/components/users-lessons/users-lessons.component.ts:243</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Metodo para añadir una nueva materia abre un dialog</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="applyFilter"></a>
+                    <span class="name">
+                        <b>
+                            applyFilter
+                        </b>
+                        <a href="#applyFilter"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>applyFilter(filterValue: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="197"
+                            class="link-to-prism">src/app/components/users-lessons/users-lessons.component.ts:197</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Filtro para busqueda en la tabla de alumnos</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>filterValue</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>Valor a filtrar en la tabla de alumnos</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="applyFilterLesson"></a>
+                    <span class="name">
+                        <b>
+                            applyFilterLesson
+                        </b>
+                        <a href="#applyFilterLesson"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>applyFilterLesson(filterValue: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="232"
+                            class="link-to-prism">src/app/components/users-lessons/users-lessons.component.ts:232</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Metodo que filtra la busqueda de materias</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>filterValue</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>Valor a filtrar para la busqueda de materias</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="deleted"></a>
+                    <span class="name">
+                        <b>
+                            deleted
+                        </b>
+                        <a href="#deleted"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>deleted(row: <a href="../classes/Subject.html">Subject</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="208"
+                            class="link-to-prism">src/app/components/users-lessons/users-lessons.component.ts:208</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Metodo que elimina una materia </p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>row</td>
+                                    <td>
+                                                <code><a href="../classes/Subject.html" target="_self" >Subject</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>Matetria qu recibe como parametro para eliminar</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="deleteStudent"></a>
+                    <span class="name">
+                        <b>
+                            deleteStudent
+                        </b>
+                        <a href="#deleteStudent"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>deleteStudent(row)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="313"
+                            class="link-to-prism">src/app/components/users-lessons/users-lessons.component.ts:313</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Metodo para eliminar un estudiante</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>row</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>Estudiante a leminar</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="isAllSelected"></a>
+                    <span class="name">
+                        <b>
+                            isAllSelected
+                        </b>
+                        <a href="#isAllSelected"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>isAllSelected()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="321"
+                            class="link-to-prism">src/app/components/users-lessons/users-lessons.component.ts:321</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Metodo para comprobar si todos en una pagina han sifo seleccionados</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="masterToggle"></a>
+                    <span class="name">
+                        <b>
+                            masterToggle
+                        </b>
+                        <a href="#masterToggle"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>masterToggle()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="329"
+                            class="link-to-prism">src/app/components/users-lessons/users-lessons.component.ts:329</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Metodo para seleccionar </p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <b>
+                            ngOnInit
+                        </b>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="150"
+                            class="link-to-prism">src/app/components/users-lessons/users-lessons.component.ts:150</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="removeSelectedRows"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Async</span>
+                            removeSelectedRows
+                        </b>
+                        <a href="#removeSelectedRows"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>removeSelectedRows()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="337"
+                            class="link-to-prism">src/app/components/users-lessons/users-lessons.component.ts:337</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Metood para eliminar a todo seleccionado</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="searchStudents"></a>
+                    <span class="name">
+                        <b>
+                            searchStudents
+                        </b>
+                        <a href="#searchStudents"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>searchStudents()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="156"
+                            class="link-to-prism">src/app/components/users-lessons/users-lessons.component.ts:156</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Metodo que sirve para buscar un estudiante haciendo una llamada a la base de datos por la 
+API este metodo no recive parametros porque saca los valores de los campos seleccionador de el grado y el grupo</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+        <h3 id="inputs">
+            Properties
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="arrayLessons"></a>
+                        <span class="name">
+                            <b>
+                            arrayLessons</b>
+                            <a href="#arrayLessons"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../classes/Subject.html" target="_self" >Array&lt;Subject&gt;</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="50" class="link-to-prism">src/app/components/users-lessons/users-lessons.component.ts:50</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>Arreglo que contiene todas las materias de los alumnos</p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="arrayStudents"></a>
+                        <span class="name">
+                            <b>
+                            arrayStudents</b>
+                            <a href="#arrayStudents"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../classes/User.html" target="_self" >Array&lt;User&gt;</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="46" class="link-to-prism">src/app/components/users-lessons/users-lessons.component.ts:46</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>Arraeglo que contiene a todos los alumnos buscados</p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="dataSource"></a>
+                        <span class="name">
+                            <b>
+                            dataSource</b>
+                            <a href="#dataSource"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../classes/User.html" target="_self" >MatTableDataSource&lt;User&gt;</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="78" class="link-to-prism">src/app/components/users-lessons/users-lessons.component.ts:78</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>Tabla donde estan los datos de los usuarios</p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="dataSourceLessons"></a>
+                        <span class="name">
+                            <b>
+                            dataSourceLessons</b>
+                            <a href="#dataSourceLessons"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../classes/Subject.html" target="_self" >MatTableDataSource&lt;Subject&gt;</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="89" class="link-to-prism">src/app/components/users-lessons/users-lessons.component.ts:89</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>Tabla donde estan los datos de los usuarios</p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="dialog"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            dialog</b>
+                            <a href="#dialog"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>MatDialog</code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="145" class="link-to-prism">src/app/components/users-lessons/users-lessons.component.ts:145</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description">variable para hacer llamada a un dialog externo</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="displayedColumns"></a>
+                        <span class="name">
+                            <b>
+                            displayedColumns</b>
+                            <a href="#displayedColumns"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>string[]</code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>[&#x27;select&#x27;,&#x27;id&#x27;, &#x27;name&#x27;,&#x27;grade&#x27;, &#x27;group&#x27;,&#x27;delet&#x27;]</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="73" class="link-to-prism">src/app/components/users-lessons/users-lessons.component.ts:73</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>Columnas a mostrar para los alumnos</p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="displayedColumnsLessons"></a>
+                        <span class="name">
+                            <b>
+                            displayedColumnsLessons</b>
+                            <a href="#displayedColumnsLessons"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>string[]</code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>[&#x27;name&#x27;,&#x27;grade&#x27;, &#x27;deleted&#x27;]</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="83" class="link-to-prism">src/app/components/users-lessons/users-lessons.component.ts:83</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>Columnas a mostrar para las materias</p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="estudiantes"></a>
+                        <span class="name">
+                            <b>
+                            estudiantes</b>
+                            <a href="#estudiantes"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean" target="_blank" >Boolean</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>false</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="62" class="link-to-prism">src/app/components/users-lessons/users-lessons.component.ts:62</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>Indica si ya se buscaron estudiantes anteriormente</p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="grades"></a>
+                        <span class="name">
+                            <b>
+                            grades</b>
+                            <a href="#grades"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../interfaces/Grade.html" target="_self" >Grade[]</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>[
+    {value: &#x27;1&#x27;, viewValue:&quot;1°&quot;},
+    {value: &#x27;2&#x27;, viewValue:&quot;2°&quot;},
+    {value: &#x27;3&#x27;, viewValue:&quot;3°&quot;},
+    {value: &#x27;4&#x27;, viewValue:&quot;4°&quot;},
+    {value: &#x27;5&#x27;, viewValue:&quot;5°&quot;},
+    {value: &#x27;6&#x27;, viewValue:&quot;6°&quot;}
+  ]</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="109" class="link-to-prism">src/app/components/users-lessons/users-lessons.component.ts:109</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>Propiedad que sirve para tener los grados de los alumnos</p>
+</div>
+                    </td>
+                </tr>
+
+                    <tr>
+                        <td class="col-md-4">
+                          <div class="io-description">
+                                  <b>Parameters :</b>
+                                  <table class="params">
+                                      <thead>
+                                          <tr>
+                                                <td>Name</td>
+                                                    <td>Description</td>
+                                          </tr>
+                                      </thead>
+                                      <tbody>
+                                                <tr>
+                                                        <td>value</td>
+                                                        <td>
+                                                                <code><p>es el valor que tendra como tal la seleccion </p>
+</code>
+                                                        </td>
+                                                </tr>
+                                                <tr>
+                                                        <td>viewValue</td>
+                                                        <td>
+                                                                <code><p>es el valor que que se muestra para la seleccion </p>
+</code>
+                                                        </td>
+                                                </tr>
+                                      </tbody>
+                                  </table>
+                          </div>
+                        </td>
+                    </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="gradeSelected"></a>
+                        <span class="name">
+                            <b>
+                            gradeSelected</b>
+                            <a href="#gradeSelected"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String" target="_blank" >String</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="97" class="link-to-prism">src/app/components/users-lessons/users-lessons.component.ts:97</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>Contiene el valor del grado seleccionado</p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="groups"></a>
+                        <span class="name">
+                            <b>
+                            groups</b>
+                            <a href="#groups"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../interfaces/Group.html" target="_self" >Group[]</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>[
+    {value: &#x27;A&#x27;, viewValue:&quot;A&quot;},
+    {value: &#x27;B&#x27;, viewValue:&quot;B&quot;},
+    {value: &#x27;C&#x27;, viewValue:&quot;C&quot;},
+    {value: &#x27;D&#x27;, viewValue:&quot;D&quot;},
+    {value: &#x27;E&#x27;, viewValue:&quot;E&quot;},
+    {value: &#x27;F&#x27;, viewValue:&quot;F&quot;}
+  ]</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="124" class="link-to-prism">src/app/components/users-lessons/users-lessons.component.ts:124</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>Propiedad que indica </p>
+</div>
+                    </td>
+                </tr>
+
+                    <tr>
+                        <td class="col-md-4">
+                          <div class="io-description">
+                                  <b>Parameters :</b>
+                                  <table class="params">
+                                      <thead>
+                                          <tr>
+                                                <td>Name</td>
+                                                    <td>Description</td>
+                                          </tr>
+                                      </thead>
+                                      <tbody>
+                                                <tr>
+                                                        <td>value</td>
+                                                        <td>
+                                                                <code><p>es el valor que tendra como tal la seleccion </p>
+</code>
+                                                        </td>
+                                                </tr>
+                                                <tr>
+                                                        <td>viewValue</td>
+                                                        <td>
+                                                                <code><p>es el valor que que se muestra para la seleccion </p>
+</code>
+                                                        </td>
+                                                </tr>
+                                      </tbody>
+                                  </table>
+                          </div>
+                        </td>
+                    </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="groupSelected"></a>
+                        <span class="name">
+                            <b>
+                            groupSelected</b>
+                            <a href="#groupSelected"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String" target="_blank" >String</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="102" class="link-to-prism">src/app/components/users-lessons/users-lessons.component.ts:102</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>Contiene el valor del grupo seleccionado</p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="materias"></a>
+                        <span class="name">
+                            <b>
+                            materias</b>
+                            <a href="#materias"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean" target="_blank" >Boolean</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>false</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="58" class="link-to-prism">src/app/components/users-lessons/users-lessons.component.ts:58</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>Indica si ya se buscaron materias  </p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="paginator"></a>
+                        <span class="name">
+                            <b>
+                            paginator</b>
+                            <a href="#paginator"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>QueryList&lt;MatPaginator&gt;</code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <b>Decorators : </b>
+                            <br />
+                            <code>
+                                @ViewChildren(MatPaginator)<br />
+                            </code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="135" class="link-to-prism">src/app/components/users-lessons/users-lessons.component.ts:135</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="selection"></a>
+                        <span class="name">
+                            <b>
+                            selection</b>
+                            <a href="#selection"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>new SelectionModel&lt;any&gt;(true, [])</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="67" class="link-to-prism">src/app/components/users-lessons/users-lessons.component.ts:67</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>Arreglo que tiene todos los alumnos seleccionados</p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="sort"></a>
+                        <span class="name">
+                            <b>
+                            sort</b>
+                            <a href="#sort"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>QueryList&lt;MatSort&gt;</code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <b>Decorators : </b>
+                            <br />
+                            <code>
+                                @ViewChildren(MatSort)<br />
+                            </code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="136" class="link-to-prism">src/app/components/users-lessons/users-lessons.component.ts:136</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit, ViewChild, ViewChildren, QueryList } from &#x27;@angular/core&#x27;;
+import { MatPaginator, MatSort, MatTableDataSource, MatDialog } from &#x27;@angular/material&#x27;;
+import { APIService } from &#x27;src/app/services/api/api.service&#x27;;
+import { User } from &#x27;src/app/models/User.model&#x27;;
+import { Subject } from &#x27;src/app/models/Subject.model&#x27;;
+import { AddSubjectComponent } from &#x27;src/app/dialogs/add-subject/add-subject.component&#x27;;
+import { AddStudentComponent } from &#x27;src/app/dialogs/add-student/add-student.component&#x27;;
+import { SelectionModel } from &#x27;@angular/cdk/collections&#x27;;
+
+/**
+ * Interace para mantener dos valores uno a mostrar y otro el valor que relamente tendra
+ */
+export interface Grade{
+  /**
+   * value es el valor real que tendra 
+   */
+  value: any,
+  /**
+   * es el valor a mostrar de a interface
+   */
+  viewValue: any
+}
+/**
+ * Interace para mantener dos valores uno a mostrar y otro el valor que relamente tendra
+ */
+export interface Group{
+  /**
+   * value es el valor real que tendra 
+   */
+  value: any,
+  /**
+   * es el valor a mostrar de a interface
+   */
+  viewValue: any
+}
+
+@Component({
+  selector: &#x27;app-users-lessons&#x27;,
+  templateUrl: &#x27;./users-lessons.component.html&#x27;,
+  styleUrls: [&#x27;./users-lessons.component.css&#x27;]
+})
+export class UsersLessonsComponent implements OnInit {
+  /**
+   * Arraeglo que contiene a todos los alumnos buscados
+   */
+  arrayStudents: Array&lt;User&gt;;
+  /**
+   * Arreglo que contiene todas las materias de los alumnos
+   */
+  arrayLessons: Array&lt;Subject&gt;;
+  
+
+
+
+  /**
+   * Indica si ya se buscaron materias  
+   */
+  materias: Boolean &#x3D;false;
+  /**
+   * Indica si ya se buscaron estudiantes anteriormente
+   */
+  estudiantes: Boolean &#x3D;false;
+  
+  /**
+   * Arreglo que tiene todos los alumnos seleccionados
+   */
+  selection &#x3D; new SelectionModel&lt;any&gt;(true, []);
+
+
+  /**
+   * Columnas a mostrar para los alumnos
+   */
+  displayedColumns: string[] &#x3D; [&#x27;select&#x27;,&#x27;id&#x27;, &#x27;name&#x27;,&#x27;grade&#x27;, &#x27;group&#x27;,&#x27;delet&#x27;];
+  
+  /**
+   * Tabla donde estan los datos de los usuarios
+   */
+  dataSource: MatTableDataSource&lt;User&gt;;
+
+  /**
+   * Columnas a mostrar para las materias
+   */
+  displayedColumnsLessons: string[] &#x3D; [&#x27;name&#x27;,&#x27;grade&#x27;, &#x27;deleted&#x27;];
+  
+  
+  /**
+   * Tabla donde estan los datos de los usuarios
+   */
+  dataSourceLessons: MatTableDataSource&lt;Subject&gt;;
+
+
+
+
+  /**
+   * Contiene el valor del grado seleccionado
+   */
+  gradeSelected:String
+
+  /**
+   * Contiene el valor del grupo seleccionado
+   */
+  groupSelected:String
+  /**
+   *  Propiedad que sirve para tener los grados de los alumnos
+   * @param value es el valor que tendra como tal la seleccion 
+   * @param viewValue es el valor que que se muestra para la seleccion 
+   * 
+   */
+  grades:Grade[] &#x3D; [
+    {value: &#x27;1&#x27;, viewValue:&quot;1°&quot;},
+    {value: &#x27;2&#x27;, viewValue:&quot;2°&quot;},
+    {value: &#x27;3&#x27;, viewValue:&quot;3°&quot;},
+    {value: &#x27;4&#x27;, viewValue:&quot;4°&quot;},
+    {value: &#x27;5&#x27;, viewValue:&quot;5°&quot;},
+    {value: &#x27;6&#x27;, viewValue:&quot;6°&quot;}
+  ];
+
+  /**
+   * Propiedad que indica 
+   * @param value es el valor que tendra como tal la seleccion 
+   * @param viewValue es el valor que que se muestra para la seleccion 
+   * 
+   */
+  groups:Group[] &#x3D; [
+    {value: &#x27;A&#x27;, viewValue:&quot;A&quot;},
+    {value: &#x27;B&#x27;, viewValue:&quot;B&quot;},
+    {value: &#x27;C&#x27;, viewValue:&quot;C&quot;},
+    {value: &#x27;D&#x27;, viewValue:&quot;D&quot;},
+    {value: &#x27;E&#x27;, viewValue:&quot;E&quot;},
+    {value: &#x27;F&#x27;, viewValue:&quot;F&quot;}
+  ];
+
+  
+
+  @ViewChildren(MatPaginator, ) paginator:QueryList&lt;MatPaginator&gt;;
+  @ViewChildren(MatSort)  sort:QueryList&lt; MatSort&gt;;
+
+  /**
+   * Constructor de la clase 
+   * @param api es la variable de la api que conecta con la base de datos
+   * @param dialog variable para hacer llamada a un dialog externo
+   */
+  constructor(
+    private api: APIService,
+    public dialog : MatDialog,
+    
+  ) {
+
+  }
+  ngOnInit() {    
+  }
+  /**
+   * Metodo que sirve para buscar un estudiante haciendo una llamada a la base de datos por la 
+   * API este metodo no recive parametros porque saca los valores de los campos seleccionador de el grado y el grupo
+   */
+  searchStudents(){ 
+    if (this.gradeSelected){
+      let params&#x3D;{
+        grade:this.gradeSelected
+      }
+
+      this.api.getSubjectsGrade(params).subscribe(response&#x3D;&gt;{
+        this.materias&#x3D;true
+        this.arrayLessons&#x3D;response as Array&lt;Subject&gt;
+        console.log(this.arrayLessons)
+        console.log(&quot;users&quot;)
+        this.dataSourceLessons &#x3D; new MatTableDataSource(this.arrayLessons);
+        this.dataSourceLessons.paginator &#x3D; this.paginator.first;
+        this.dataSourceLessons.sort &#x3D; this.sort.first;
+      });
+    }
+
+    if (this.gradeSelected !&#x3D; null &amp;&amp; this.groupSelected !&#x3D; null) {
+      let params&#x3D;{
+        &quot;grade&quot;:this.gradeSelected,
+	      &quot;group&quot;:this.groupSelected
+      }
+      
+      this.api.getUsersInLesson(params).subscribe(response&#x3D;&gt;{
+        this.estudiantes&#x3D;true;
+
+        this.arrayStudents&#x3D;response as Array&lt;User&gt;
+
+          this.dataSource &#x3D; new MatTableDataSource(this.arrayStudents);
+          this.dataSource.paginator &#x3D; this.paginator.last;
+          this.dataSource.sort &#x3D; this.sort.last;
+  
+      });
+    }
+  }
+ 
+
+  /**
+   * Filtro para busqueda en la tabla de alumnos
+   * @param filterValue Valor a filtrar en la tabla de alumnos
+   */
+  applyFilter(filterValue: string) {
+    this.dataSource.filter &#x3D; filterValue.trim().toLowerCase();
+
+    if (this.dataSource.paginator) {
+      this.dataSource.paginator.firstPage();
+    }
+  }
+  /**
+   * Metodo que elimina una materia 
+   * @param row Matetria qu recibe como parametro para eliminar
+   */
+  deleted(row:Subject){
+    row.deleted&#x3D;true;
+    this.api.updateSubject(row).subscribe(response&#x3D;&gt;{
+      console.log(response);
+      let params&#x3D;{
+        grade:this.gradeSelected
+      }
+  
+      this.api.getSubjectsGrade(params).subscribe(response&#x3D;&gt;{
+        this.materias&#x3D;true
+        this.arrayLessons&#x3D;response as Array&lt;Subject&gt;
+        console.log(this.arrayLessons)
+        console.log(&quot;users&quot;)
+        this.dataSourceLessons &#x3D; new MatTableDataSource(this.arrayLessons);
+        this.dataSourceLessons.paginator &#x3D; this.paginator.first;
+        this.dataSourceLessons.sort &#x3D; this.sort.first;
+      });
+    })
+    
+  }
+  /**
+   * Metodo que filtra la busqueda de materias
+   * @param filterValue Valor a filtrar para la busqueda de materias
+   */
+  applyFilterLesson(filterValue: string) {
+    this.dataSourceLessons.filter &#x3D; filterValue.trim().toLowerCase();
+
+    if (this.dataSourceLessons.paginator) {
+      this.dataSourceLessons.paginator.firstPage();
+    }
+  }
+
+  /**
+   * Metodo para añadir una nueva materia abre un dialog
+   */
+  addSubject(){
+    const dialogRef &#x3D; this.dialog.open(AddSubjectComponent,{
+      data: {
+        grade: this.gradeSelected,
+        group:this.groupSelected
+      }
+    });
+    dialogRef.afterClosed().subscribe(response&#x3D;&gt;{
+        if(response){
+          let subject:Subject&#x3D; new Subject(response.materia,response.grado, false, 1 );
+          this.api.addSubject(subject).subscribe(response&#x3D;&gt;{
+            if(response){
+              let params&#x3D;{
+                grade:this.gradeSelected
+              }
+          
+              this.api.getSubjectsGrade(params).subscribe(response&#x3D;&gt;{
+                this.materias&#x3D;true
+                this.arrayLessons&#x3D;response as Array&lt;any&gt;
+                this.dataSourceLessons &#x3D; new MatTableDataSource(this.arrayLessons);
+                this.dataSourceLessons.paginator &#x3D; this.paginator.first;
+                this.dataSourceLessons.sort &#x3D; this.sort.first;
+              });
+            }
+          })
+
+
+          
+        } 
+           
+    })
+  }
+
+  /**
+   * Metodo para añadir un estudiante todavia no esta terminado
+   */
+
+  addStudent(){
+    const dialogRef &#x3D; this.dialog.open(AddStudentComponent,{
+      data: {
+        grade: this.gradeSelected,
+        group:this.groupSelected
+      }
+    });
+    dialogRef.afterClosed().subscribe(response&#x3D;&gt;{
+        console.log(response);
+        if(response){
+          let subject:Subject&#x3D; new Subject(response.materia,response.grado, false, 1 );
+          console.log(subject)
+          this.api.addSubject(subject).subscribe(response&#x3D;&gt;{
+            if(response){
+              let params&#x3D;{
+                grade:this.gradeSelected
+              }
+              this.api.getSubjectsGrade(params).subscribe(response&#x3D;&gt;{
+                this.materias&#x3D;true
+                this.arrayLessons&#x3D;response as Array&lt;any&gt;
+                this.dataSourceLessons &#x3D; new MatTableDataSource(this.arrayLessons);
+                this.dataSourceLessons.paginator &#x3D; this.paginator.first;
+                this.dataSourceLessons.sort &#x3D; this.sort.first;
+              });
+            }
+          })
+        }    
+    })
+  }
+  /**
+   * Metodo para eliminar un estudiante
+   * @param row Estudiante a leminar
+   */
+  deleteStudent(row){
+    this.api.deleteLessonIdUser(row.id_user).subscribe(response&#x3D;&gt;{
+      // this.dataSource.data.find(row).
+    })
+  }
+  /**
+   * Metodo para comprobar si todos en una pagina han sifo seleccionados
+   */
+  isAllSelected() {
+    const numSelected &#x3D; this.selection.selected.length;
+    const numRows &#x3D; this.dataSource.data.length;
+    return numSelected &#x3D;&#x3D;&#x3D; numRows;
+  }
+  /**
+   * Metodo para seleccionar 
+   */
+  masterToggle() {
+    this.isAllSelected() ?
+      this.selection.clear() :
+      this.dataSource.data.forEach(row &#x3D;&gt; this.selection.select(row));
+  }
+  /**
+   * Metood para eliminar a todo seleccionado
+   */
+  async removeSelectedRows() {
+    this.selection.selected.forEach(item &#x3D;&gt; {
+      let index: number &#x3D; this.arrayStudents.findIndex(d &#x3D;&gt; d &#x3D;&#x3D;&#x3D; item);
+      console.log(this.arrayStudents.findIndex(d &#x3D;&gt; d &#x3D;&#x3D;&#x3D; item));
+      let temp:any &#x3D; this.arrayStudents.find(d &#x3D;&gt; d &#x3D;&#x3D;&#x3D; item)
+      console.log(temp)
+      
+      this.api.deleteLessonIdUser(temp.id_user).subscribe(response&#x3D;&gt;{
+        this.arrayStudents.splice(index,1)
+        this.dataSource &#x3D; new MatTableDataSource&lt;User&gt;(this.arrayStudents);
+      })
+
+    });
+    this.selection &#x3D; new SelectionModel&lt;User&gt;(true, []);
+  }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;div class&#x3D;&quot;image_background&quot;&gt;
+
+    &lt;app-header&gt;&lt;/app-header&gt;
+
+    &lt;!--Buscador--&gt;
+    &lt;p class&#x3D;&quot;title &quot;&gt;Buscar alumnos &lt;/p&gt;
+
+    &lt;div class&#x3D;&quot;row centrado&quot;&gt;
+        &lt;mat-toolbar-row&gt;
+            &lt;mat-form-field style&#x3D;&quot;font-size: 14px; margin-left: 0%;&quot;&gt;
+                &lt;mat-label&gt;Grado&lt;/mat-label&gt;
+                &lt;mat-select (selectionChange)&#x3D;&quot;searchStudents()&quot; [(ngModel)]&#x3D;&quot;gradeSelected&quot;&gt;
+                    &lt;mat-option *ngFor&#x3D;&quot;let grade of grades&quot; [value]&#x3D;&quot;grade.value&quot;&gt;
+                        {{grade.viewValue}}
+                    &lt;/mat-option&gt;
+                &lt;/mat-select&gt;
+            &lt;/mat-form-field&gt;
+
+
+            &lt;mat-form-field style&#x3D;&quot; font-size: 14px; margin-right: 0%;&quot;&gt;
+                &lt;mat-label&gt;Grupo&lt;/mat-label&gt;
+                &lt;mat-select (selectionChange)&#x3D;&quot;searchStudents()&quot; [(ngModel)]&#x3D;&quot;groupSelected&quot;&gt;
+                    &lt;mat-option *ngFor&#x3D;&quot;let group of groups&quot; [value]&#x3D;&quot;group.value&quot;&gt;
+                        {{group.viewValue}}
+                    &lt;/mat-option&gt;
+                &lt;/mat-select&gt;
+            &lt;/mat-form-field&gt;
+        &lt;/mat-toolbar-row&gt;
+    &lt;/div&gt;
+    &lt;!--/Buscador--&gt;
+
+    &lt;br&gt;
+    &lt;mat-form-field&gt;
+        &lt;input matInput (keyup)&#x3D;&quot;applyFilter($event.target.value)&quot; placeholder&#x3D;&quot;Filter&quot;&gt;
+    &lt;/mat-form-field&gt;
+
+
+    &lt;br&gt;
+    &lt;!--Tabla de materias--&gt;
+    &lt;div class&#x3D;&quot;row containerTables&quot;&gt;
+        &lt;div class&#x3D;&quot;subjects &quot;&gt;
+            &lt;mat-table class&#x3D;&quot;subjectsTable&quot; mat-table [dataSource]&#x3D;&quot;dataSourceLessons&quot; matSort&gt;
+
+
+
+                &lt;!-- Name Column --&gt;
+                &lt;ng-container matColumnDef&#x3D;&quot;name&quot;&gt;
+                    &lt;mat-header-cell class&#x3D;&quot;celdas&quot; *matHeaderCellDef mat-sort-header&gt; Nombre &lt;/mat-header-cell&gt;
+                    &lt;mat-cell class&#x3D;&quot;celdas&quot; *matCellDef&#x3D;&quot;let row&quot;&gt; {{row.name}} &lt;/mat-cell&gt;
+                    &lt;mat-footer-cell *matFooterCellDef&gt;&lt;/mat-footer-cell&gt;
+
+                &lt;/ng-container&gt;
+
+
+                &lt;!-- Grade Column --&gt;
+                &lt;ng-container matColumnDef&#x3D;&quot;grade&quot;&gt;
+                    &lt;mat-header-cell class&#x3D;&quot;celdas&quot; *matHeaderCellDef mat-sort-header&gt; Grado &lt;/mat-header-cell&gt;
+                    &lt;mat-cell class&#x3D;&quot;celdas&quot; *matCellDef&#x3D;&quot;let row&quot;&gt; {{row.grade}} &lt;/mat-cell&gt;
+                    &lt;mat-footer-cell *matFooterCellDef&gt;&lt;/mat-footer-cell&gt;
+
+                &lt;/ng-container&gt;
+
+
+                &lt;!-- Deleted Column --&gt;
+                &lt;ng-container matColumnDef&#x3D;&quot;deleted&quot;&gt;
+                    &lt;mat-header-cell class&#x3D;&quot;celdas&quot; *matHeaderCellDef mat-sort-header&gt; Eliminar &lt;/mat-header-cell&gt;
+                    &lt;mat-cell class&#x3D;&quot;celdas&quot; *matCellDef&#x3D;&quot;let row&quot;&gt; &lt;button mat-flat-button color&#x3D;&quot;warn&quot; (click)&#x3D;&quot;deleted(row)&quot;&gt;Desactivar&lt;/button&gt; &lt;/mat-cell&gt;
+                    &lt;mat-footer-cell *matFooterCellDef&gt;&lt;/mat-footer-cell&gt;
+
+                &lt;/ng-container&gt;
+
+                &lt;mat-header-row *matHeaderRowDef&#x3D;&quot;displayedColumnsLessons&quot;&gt;&lt;/mat-header-row&gt;
+                &lt;mat-row *matRowDef&#x3D;&quot;let row; columns: displayedColumnsLessons;&quot;&gt;
+                &lt;/mat-row&gt;
+
+
+                &lt;ng-container matColumnDef&#x3D;&quot;disclaimer&quot;&gt;
+                    &lt;mat-footer-cell *matFooterCellDef colspan&#x3D;&quot;2&quot;&gt;
+                        &lt;button *ngIf&#x3D;&quot;gradeSelected&quot; mat-raised-button (click)&#x3D;&quot;addSubject()&quot;&gt; Añadir materia &lt;/button&gt;
+                    &lt;/mat-footer-cell&gt;
+                &lt;/ng-container&gt;
+
+                &lt;mat-footer-row *matFooterRowDef&#x3D;&quot;displayedColumnsLessons; sticky: true&quot; class&#x3D;&quot;example-first-footer-row&quot;&gt;&lt;/mat-footer-row&gt;
+                &lt;mat-footer-row *matFooterRowDef&#x3D;&quot;[&#x27;disclaimer&#x27;]&quot; class&#x3D;&quot;example-second-footer-row&quot;&gt;&lt;/mat-footer-row&gt;
+            &lt;/mat-table&gt;
+
+
+
+
+
+            &lt;mat-paginator [pageSizeOptions]&#x3D;&quot;[5, 10, 25, 100]&quot;&gt; &lt;/mat-paginator&gt;
+        &lt;/div&gt;
+        &lt;!--/Tabla de materias--&gt;
+
+
+
+        &lt;br&gt;
+
+
+        &lt;!-- tabla de alumnos --&gt;
+        &lt;div class&#x3D;&quot;example-container &quot;&gt;
+            &lt;button mat-raised-button color&#x3D;&quot;primary&quot; (click)&#x3D;&quot;removeSelectedRows()&quot;&gt;
+                        Remove Selected Rows
+                      &lt;/button&gt;
+            &lt;mat-table mat-table [dataSource]&#x3D;&quot;dataSource&quot; matSort style&#x3D;&quot;overflow: auto; max-height: 300px;&quot;&gt;
+
+
+                &lt;!-- Checkbox Column --&gt;
+                &lt;ng-container matColumnDef&#x3D;&quot;select&quot;&gt;
+                    &lt;mat-header-cell *matHeaderCellDef&gt;
+                        &lt;mat-checkbox (change)&#x3D;&quot;$event ? masterToggle() : null&quot; [checked]&#x3D;&quot;selection.hasValue() &amp;&amp; isAllSelected()&quot; [indeterminate]&#x3D;&quot;selection.hasValue() &amp;&amp; !isAllSelected()&quot;&gt;
+                        &lt;/mat-checkbox&gt;
+                    &lt;/mat-header-cell&gt;
+                    &lt;mat-cell *matCellDef&#x3D;&quot;let row&quot;&gt;
+                        &lt;mat-checkbox (click)&#x3D;&quot;$event.stopPropagation()&quot; (change)&#x3D;&quot;$event ? selection.toggle(row) : null&quot; [checked]&#x3D;&quot;selection.isSelected(row)&quot;&gt;
+                        &lt;/mat-checkbox&gt;
+                    &lt;/mat-cell&gt;
+                    &lt;mat-footer-cell *matFooterCellDef&gt;&lt;/mat-footer-cell&gt;
+
+                &lt;/ng-container&gt;
+
+                &lt;!-- ID Column --&gt;
+                &lt;ng-container matColumnDef&#x3D;&quot;id&quot;&gt;
+                    &lt;mat-header-cell mat-header-cell *matHeaderCellDef mat-sort-header&gt; ID &lt;/mat-header-cell&gt;
+                    &lt;mat-cell *matCellDef&#x3D;&quot;let row&quot;&gt; {{row.id}} &lt;/mat-cell&gt;
+                    &lt;mat-footer-cell *matFooterCellDef&gt;&lt;/mat-footer-cell&gt;
+                &lt;/ng-container&gt;
+
+                &lt;!-- Name Column --&gt;
+                &lt;ng-container matColumnDef&#x3D;&quot;name&quot;&gt;
+                    &lt;mat-header-cell mat-header-cell *matHeaderCellDef mat-sort-header&gt; Nombre &lt;/mat-header-cell&gt;
+                    &lt;mat-cell mat-cell *matCellDef&#x3D;&quot;let row&quot;&gt; {{row.username}} &lt;/mat-cell&gt;
+                    &lt;mat-footer-cell *matFooterCellDef&gt;&lt;/mat-footer-cell&gt;
+                &lt;/ng-container&gt;
+
+                &lt;!-- Grade Column --&gt;
+                &lt;ng-container matColumnDef&#x3D;&quot;grade&quot;&gt;
+                    &lt;mat-header-cell mat-header-cell *matHeaderCellDef mat-sort-header&gt; Grado &lt;/mat-header-cell&gt;
+                    &lt;mat-cell *matCellDef&#x3D;&quot;let row&quot;&gt; {{row.grade}} &lt;/mat-cell&gt;
+                    &lt;mat-footer-cell *matFooterCellDef&gt;&lt;/mat-footer-cell&gt;
+                &lt;/ng-container&gt;
+
+                &lt;!-- Group Column --&gt;
+                &lt;ng-container matColumnDef&#x3D;&quot;group&quot;&gt;
+                    &lt;mat-header-cell mat-header-cell *matHeaderCellDef mat-sort-header&gt; Grupo &lt;/mat-header-cell&gt;
+                    &lt;mat-cell *matCellDef&#x3D;&quot;let row&quot;&gt; {{row.group}} &lt;/mat-cell&gt;
+                    &lt;mat-footer-cell *matFooterCellDef&gt;&lt;/mat-footer-cell&gt;
+                &lt;/ng-container&gt;
+
+                &lt;!-- Delet Column --&gt;
+
+                &lt;ng-container matColumnDef&#x3D;&quot;delet&quot;&gt;
+                    &lt;mat-header-cell mat-header-cell *matHeaderCellDef mat-sort-header&gt; Eliminar &lt;/mat-header-cell&gt;
+                    &lt;mat-cell *matCellDef&#x3D;&quot;let row&quot;&gt; &lt;button mat-raised-button color&#x3D;&quot;warn&quot; (click)&#x3D;&quot;deleteStudent(row)&quot;&gt; Eliminar&lt;/button&gt; &lt;/mat-cell&gt;
+                    &lt;mat-footer-cell *matFooterCellDef&gt;&lt;/mat-footer-cell&gt;
+                &lt;/ng-container&gt;
+
+                &lt;!-- Disclaimer column --&gt;
+                &lt;ng-container matColumnDef&#x3D;&quot;disclaimer&quot;&gt;
+                    &lt;mat-cell mat-footer-cell *matFooterCellDef colspan&#x3D;&quot;2&quot;&gt;
+                        &lt;button *ngIf&#x3D;&quot;gradeSelected&quot; mat-raised-button (click)&#x3D;&quot;addStudent()&quot;&gt; Añadir Alumno &lt;/button&gt;
+                    &lt;/mat-cell&gt;
+                &lt;/ng-container&gt;
+
+
+                &lt;mat-header-row *matHeaderRowDef&#x3D;&quot;displayedColumns; sticky: true&quot;&gt;&lt;/mat-header-row&gt;
+                &lt;mat-row *matRowDef&#x3D;&quot;let row; columns: displayedColumns;&quot;&gt;
+                &lt;/mat-row&gt;
+
+                &lt;mat-footer-row mat-footer-row *matFooterRowDef&#x3D;&quot;displayedColumns; sticky: true&quot; class&#x3D;&quot;example-first-footer-row&quot;&gt;&lt;/mat-footer-row&gt;
+                &lt;mat-footer-row *matFooterRowDef&#x3D;&quot;[&#x27;disclaimer&#x27;]&quot; class&#x3D;&quot;example-second-footer-row&quot;&gt;&lt;/mat-footer-row&gt;
+            &lt;/mat-table&gt;
+
+            &lt;mat-paginator [pageSizeOptions]&#x3D;&quot;[5, 10, 25, 100]&quot;&gt;&lt;/mat-paginator&gt;
+        &lt;/div&gt;
+        &lt;!-- /tabla de alumnos --&gt;
+
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./users-lessons.component.css</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">.example-container {
+    max-height: 500px !important;
+    position: relative;
+    overflow: auto;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+}
+
+.example-table-container {
+    position: relative;
+    max-height: 500px;
+    overflow: auto;
+}
+
+.mat-form-field {
+    font-size: 24px;
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+    /* text-align: center; */
+}
+
+.mat-paginator {
+    font-size: 14px;
+    width: 100%;
+}
+
+.celdas {
+    width: 5%;
+}
+
+.subjects {
+    max-height: 500px !important;
+    width: 25%;
+    overflow: auto;
+    /* margin: 10%; */
+    margin-left: 1%;
+    margin-right: 1%;
+    display: flex;
+    flex-direction: column;
+    max-width: 25%;
+}
+
+.subjectsTable {
+    width: 100%;
+    height: 100%;
+    /* max-height: 300px; */
+}
+
+.mat-column-select {
+    overflow: visible;
+}
+
+.mat-table {
+    overflow: auto;
+    max-height: 500px;
+}
+
+.image_background {
+    position: absolute !important;
+    top: 0px !important;
+    bottom: 0px !important;
+    width: 100vw !important;
+    height: 100vh !important;
+    padding: 0px !important;
+    max-width: 100vw;
+    max-height: 100vh;
+    background-image: url(&#x27;/assets/pictures/paper.jpg&#x27;);
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+.centrado {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 50%;
+    background-color: white;
+}
+
+.containerTables {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 80%;
+}
+
+.title {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: &quot;Segoe UI&quot;;
+    color: black;
+    font-size: 40px;
+}
+
+.example-first-footer-row {
+    font-weight: bold;
+}</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><div class="image_background">    <app-header></app-header>    <!--Buscador-->    <p class="title ">Buscar alumnos </p>    <div class="row centrado">        <mat-toolbar-row>            <mat-form-field style="font-size: 14px; margin-left: 0%;">                <mat-label>Grado</mat-label>                <mat-select (selectionChange)="searchStudents()" [(ngModel)]="gradeSelected">                    <mat-option *ngFor="let grade of grades" [value]="grade.value">                        {{grade.viewValue}}                    </mat-option>                </mat-select>            </mat-form-field>            <mat-form-field style=" font-size: 14px; margin-right: 0%;">                <mat-label>Grupo</mat-label>                <mat-select (selectionChange)="searchStudents()" [(ngModel)]="groupSelected">                    <mat-option *ngFor="let group of groups" [value]="group.value">                        {{group.viewValue}}                    </mat-option>                </mat-select>            </mat-form-field>        </mat-toolbar-row>    </div>    <!--/Buscador-->    <br>    <mat-form-field>        <input matInput (keyup)="applyFilter($event.target.value)" placeholder="Filter">    </mat-form-field>    <br>    <!--Tabla de materias-->    <div class="row containerTables">        <div class="subjects ">            <mat-table class="subjectsTable" mat-table [dataSource]="dataSourceLessons" matSort>                <!-- Name Column -->                <ng-container matColumnDef="name">                    <mat-header-cell class="celdas" *matHeaderCellDef mat-sort-header> Nombre </mat-header-cell>                    <mat-cell class="celdas" *matCellDef="let row"> {{row.name}} </mat-cell>                    <mat-footer-cell *matFooterCellDef></mat-footer-cell>                </ng-container>                <!-- Grade Column -->                <ng-container matColumnDef="grade">                    <mat-header-cell class="celdas" *matHeaderCellDef mat-sort-header> Grado </mat-header-cell>                    <mat-cell class="celdas" *matCellDef="let row"> {{row.grade}} </mat-cell>                    <mat-footer-cell *matFooterCellDef></mat-footer-cell>                </ng-container>                <!-- Deleted Column -->                <ng-container matColumnDef="deleted">                    <mat-header-cell class="celdas" *matHeaderCellDef mat-sort-header> Eliminar </mat-header-cell>                    <mat-cell class="celdas" *matCellDef="let row"> <button mat-flat-button color="warn" (click)="deleted(row)">Desactivar</button> </mat-cell>                    <mat-footer-cell *matFooterCellDef></mat-footer-cell>                </ng-container>                <mat-header-row *matHeaderRowDef="displayedColumnsLessons"></mat-header-row>                <mat-row *matRowDef="let row; columns: displayedColumnsLessons;">                </mat-row>                <ng-container matColumnDef="disclaimer">                    <mat-footer-cell *matFooterCellDef colspan="2">                        <button *ngIf="gradeSelected" mat-raised-button (click)="addSubject()"> Añadir materia </button>                    </mat-footer-cell>                </ng-container>                <mat-footer-row *matFooterRowDef="displayedColumnsLessons; sticky: true" class="example-first-footer-row"></mat-footer-row>                <mat-footer-row *matFooterRowDef="[\'disclaimer\']" class="example-second-footer-row"></mat-footer-row>            </mat-table>            <mat-paginator [pageSizeOptions]="[5, 10, 25, 100]"> </mat-paginator>        </div>        <!--/Tabla de materias-->        <br>        <!-- tabla de alumnos -->        <div class="example-container ">            <button mat-raised-button color="primary" (click)="removeSelectedRows()">                        Remove Selected Rows                      </button>            <mat-table mat-table [dataSource]="dataSource" matSort style="overflow: auto; max-height: 300px;">                <!-- Checkbox Column -->                <ng-container matColumnDef="select">                    <mat-header-cell *matHeaderCellDef>                        <mat-checkbox (change)="$event ? masterToggle() : null" [checked]="selection.hasValue() && isAllSelected()" [indeterminate]="selection.hasValue() && !isAllSelected()">                        </mat-checkbox>                    </mat-header-cell>                    <mat-cell *matCellDef="let row">                        <mat-checkbox (click)="$event.stopPropagation()" (change)="$event ? selection.toggle(row) : null" [checked]="selection.isSelected(row)">                        </mat-checkbox>                    </mat-cell>                    <mat-footer-cell *matFooterCellDef></mat-footer-cell>                </ng-container>                <!-- ID Column -->                <ng-container matColumnDef="id">                    <mat-header-cell mat-header-cell *matHeaderCellDef mat-sort-header> ID </mat-header-cell>                    <mat-cell *matCellDef="let row"> {{row.id}} </mat-cell>                    <mat-footer-cell *matFooterCellDef></mat-footer-cell>                </ng-container>                <!-- Name Column -->                <ng-container matColumnDef="name">                    <mat-header-cell mat-header-cell *matHeaderCellDef mat-sort-header> Nombre </mat-header-cell>                    <mat-cell mat-cell *matCellDef="let row"> {{row.username}} </mat-cell>                    <mat-footer-cell *matFooterCellDef></mat-footer-cell>                </ng-container>                <!-- Grade Column -->                <ng-container matColumnDef="grade">                    <mat-header-cell mat-header-cell *matHeaderCellDef mat-sort-header> Grado </mat-header-cell>                    <mat-cell *matCellDef="let row"> {{row.grade}} </mat-cell>                    <mat-footer-cell *matFooterCellDef></mat-footer-cell>                </ng-container>                <!-- Group Column -->                <ng-container matColumnDef="group">                    <mat-header-cell mat-header-cell *matHeaderCellDef mat-sort-header> Grupo </mat-header-cell>                    <mat-cell *matCellDef="let row"> {{row.group}} </mat-cell>                    <mat-footer-cell *matFooterCellDef></mat-footer-cell>                </ng-container>                <!-- Delet Column -->                <ng-container matColumnDef="delet">                    <mat-header-cell mat-header-cell *matHeaderCellDef mat-sort-header> Eliminar </mat-header-cell>                    <mat-cell *matCellDef="let row"> <button mat-raised-button color="warn" (click)="deleteStudent(row)"> Eliminar</button> </mat-cell>                    <mat-footer-cell *matFooterCellDef></mat-footer-cell>                </ng-container>                <!-- Disclaimer column -->                <ng-container matColumnDef="disclaimer">                    <mat-cell mat-footer-cell *matFooterCellDef colspan="2">                        <button *ngIf="gradeSelected" mat-raised-button (click)="addStudent()"> Añadir Alumno </button>                    </mat-cell>                </ng-container>                <mat-header-row *matHeaderRowDef="displayedColumns; sticky: true"></mat-header-row>                <mat-row *matRowDef="let row; columns: displayedColumns;">                </mat-row>                <mat-footer-row mat-footer-row *matFooterRowDef="displayedColumns; sticky: true" class="example-first-footer-row"></mat-footer-row>                <mat-footer-row *matFooterRowDef="[\'disclaimer\']" class="example-second-footer-row"></mat-footer-row>            </mat-table>            <mat-paginator [pageSizeOptions]="[5, 10, 25, 100]"></mat-paginator>        </div>        <!-- /tabla de alumnos -->    </div></div></div>'
+    var COMPONENTS = [{'name': 'AbcComponent', 'selector': 'app-abc'},{'name': 'AddFilesComponent', 'selector': 'app-add-files'},{'name': 'AddStudentComponent', 'selector': 'app-add-student'},{'name': 'AddSubjectComponent', 'selector': 'app-add-subject'},{'name': 'AlertComponent', 'selector': 'app-alert'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'ChatbotComponent', 'selector': 'app-chatbot'},{'name': 'HeaderComponent', 'selector': 'app-header'},{'name': 'LessonsComponent', 'selector': 'app-lessons'},{'name': 'LoginComponent', 'selector': 'app-login'},{'name': 'MenuComponent', 'selector': 'app-menu'},{'name': 'RegisterComponent', 'selector': 'app-register'},{'name': 'UsersLessonsComponent', 'selector': 'app-users-lessons'},{'name': 'ValidateUsersComponent', 'selector': 'app-validate-users'},{'name': 'XyzComponent', 'selector': 'app-xyz'}];
+    var DIRECTIVES = [];
+    var ACTUAL_COMPONENT = {'name': 'UsersLessonsComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+                   
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'UsersLessonsComponent.html';
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="../js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="../js/menu-wc.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>
