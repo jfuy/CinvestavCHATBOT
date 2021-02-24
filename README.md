@@ -4,7 +4,7 @@
 
 El objetivo primario de este chatbot es servir como herramienta extra-escolar y, al mismo tiempo, como guía en la interacción entre profesores y alumnos, asesorándolos, dándoles seguimiento y facilitando la comunicación entre ellos. De estamanera, los alumnos podrían expresarse más libremente, pues el chatbot funge como intermediario con sus profesores y demás personal involucrado en dicho proceso, como trabajadores sociales, psicólogos, pedagogos, prefectos y directivos. De esta manera el profesor y los estudiantes refuerzan los procesos de enseñanza aprendizaje en diversos temas educativos.
 
-El proyecto Chatbot Cinvestav 1.0, está dirigido por la Dra. Sonia Mendoza Chapa y el Dr. José Rodríguez García investigadores en el Departamento de Computación del Centro de Investigación y de Estudios Avanzados del IPN. Actualmente, el M. en C. José Fidel Urquiza Yllescas es el encargado del desarrollo, diseño, actualización y mantenimiento del software iniciado por el Ing. Luis Alejandro Pérez Sarmiento. Se espera a que se integren estudiantes de servicio social y de posgrado en los siguientes meses para el fortalecimiento de este proyecto.
+El proyecto Chatbot Cinvestav 1.0, está dirigido por la Dra. Sonia Mendoza Chapa y el Dr. José Rodríguez García investigadores en el Departamento de Computación del Centro de Investigación y de Estudios Avanzados del IPN. Actualmente, el M. en C. José Fidel Urquiza Yllescas es el encargado del desarrollo, diseño, actualización y mantenimiento del software iniciado por el Ing. Luis Alejandro Pérez Sarmiento.
 
 ## Requerimientos
 
